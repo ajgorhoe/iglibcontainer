@@ -6,3 +6,7 @@
 	path = workspaceprojects/00testsext
 	url = https://gitlab.com/ajgorhoe/iglib.workspaceprojects.00testsext.git
 	branch = master
+[submodule "workspaceprojects/anka"]
+	path = workspaceprojects/anka
+	url = https://gitlab.com/ajgorhoe/iglib.workspaceprojects.anka.git
+	branch = master
