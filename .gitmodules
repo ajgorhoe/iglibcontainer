@@ -13,3 +13,14 @@
 [submodule "workspace/z_courses"]
 	path = workspace/z_courses
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.z_courses.git
+[submodule "workspace/doc/codedoc"]
+	path = workspace/doc/codedoc
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.codedoc.git
+	branch = master
+[submodule "workspace/igcpp"]
+	path = workspace/igcpp
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.igcpp.git
+	branch = master
+[submodule "workspace/develop_cobik"]
+	path = workspace/develop_cobik
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.develop_cobik.git
