@@ -1,0 +1,4 @@
+[submodule "workspaceprojects/00tests"]
+	path = workspaceprojects/00tests
+	url = https://gitlab.com/ajgorhoe/iglib.workspaceprojects.00tests.git
+	branch = master
