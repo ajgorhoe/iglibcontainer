@@ -10,3 +10,6 @@
 	path = workspaceprojects/anka
 	url = https://gitlab.com/ajgorhoe/iglib.workspaceprojects.anka.git
 	branch = master
+[submodule "workspace/z_courses"]
+	path = workspace/z_courses
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.z_courses.git
