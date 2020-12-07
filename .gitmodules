@@ -13,6 +13,7 @@
 [submodule "workspace/z_courses"]
 	path = workspace/z_courses
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.z_courses.git
+	branch = master
 [submodule "workspace/doc/codedoc"]
 	path = workspace/doc/codedoc
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.codedoc.git
@@ -24,6 +25,7 @@
 [submodule "workspace/develop_cobik"]
 	path = workspace/develop_cobik
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.develop_cobik.git
+	branch = master
 [submodule "workspace/applications"]
 	path = workspace/applications
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.applications.git
@@ -35,6 +37,7 @@
 [submodule "workspace/base/igsolutions"]
 	path = workspace/base/igsolutions
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igsolutions.git
+	branch = master
 [submodule "workspace/base/igapp"]
 	path = workspace/base/igapp
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igapp.git
@@ -42,6 +45,7 @@
 [submodule "workspace/base/data"]
 	path = workspace/base/data
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.data.git
+	branch = master
 [submodule "workspace/base/igtest"]
 	path = workspace/base/igtest
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igtest.git
