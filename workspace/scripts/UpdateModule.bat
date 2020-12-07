@@ -3,6 +3,8 @@
 setlocal
 
 set InitialDir = %CD%
+set ScriptDir=
+
 
 echo.
 echo Updating module %CheckoutDir%

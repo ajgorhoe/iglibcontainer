@@ -8,11 +8,10 @@ ver > nul
 
 set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.igcpp.git
 rem https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
-
 set CheckoutDir=codedoc_develop
 set CheckoutBranch=master
 
-set DirLocal=%~dp0
+set ScriptDir=%~dp0
 SET InitialDir=%CD%
 set BaseScriptDir=%ScriptDir%\scripts
 set BaseSettingsScript=%SettingsScriptDir%\Settings.bat
