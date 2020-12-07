@@ -24,3 +24,7 @@
 [submodule "workspace/develop_cobik"]
 	path = workspace/develop_cobik
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.develop_cobik.git
+[submodule "workspace/applications"]
+	path = workspace/applications
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.applications.git
+	branch = master
