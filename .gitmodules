@@ -35,3 +35,18 @@
 [submodule "workspace/base/igsolutions"]
 	path = workspace/base/igsolutions
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igsolutions.git
+[submodule "workspace/base/igapp"]
+	path = workspace/base/igapp
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igapp.git
+	branch = master
+[submodule "workspace/base/data"]
+	path = workspace/base/data
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.data.git
+[submodule "workspace/base/igtest"]
+	path = workspace/base/igtest
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igtest.git
+	branch = master
+[submodule "workspace/base/igsandbox"]
+	path = workspace/base/igsandbox
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igsandbox.git
+	branch = master
