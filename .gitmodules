@@ -50,6 +50,10 @@
 	path = workspace/base/igtest
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igtest.git
 	branch = master
+# [submodule "workspace/base/unitests"]
+# 	path = workspace/base/unitests
+# 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.unitests.git
+# 	branch = master
 [submodule "workspace/base/igsandbox"]
 	path = workspace/base/igsandbox
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igsandbox.git
