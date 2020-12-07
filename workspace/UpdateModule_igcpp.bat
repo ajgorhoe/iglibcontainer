@@ -14,7 +14,7 @@ set CheckoutBranch=master
 
 set DirLocal=%~dp0
 SET InitialDir=%CD%
-set BaseScriptDir=%ScriptDir%\..\scripts
+set BaseScriptDir=%ScriptDir%\scripts
 set BaseSettingsScript=%SettingsScriptDir%\Settings.bat
 
 rem get information on the script:
