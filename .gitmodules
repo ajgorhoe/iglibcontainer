@@ -32,3 +32,6 @@
 	path = workspace/base/iglib
 	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.iglib.git
 	branch = master
+[submodule "workspace/base/igsolutions"]
+	path = workspace/base/igsolutions
+	url = https://gitlab.com/ajgorhoe/iglib.workspace.base.igsolutions.git
