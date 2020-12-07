@@ -12,13 +12,33 @@ set CheckoutDir=scripts
 set CheckoutBranch=master
 
 set ScriptDir=%~dp0
-SET InitialDir=%CD%
-set BaseScriptDir=%ScriptDir%\scripts
-set BaseSettingsScript=%SettingsScriptDir%\Settings.bat
+set InitialDir=%CD%
 
 cd %ScriptDir%
 
+if not exist "%CheckoutDir%\.git" (
+  if exist "%CheckoutDir% (
+    echo.
+    echo WARNING: Directory already exists: 
+	echo   %CheckoutDir%
+	echo Operation may fail and you may need to remove the following dir.:
+	echo   %ScriptDir%\%CheckoutDir%
+	echo.
+  )
+  echo Repository not yet checked out, cloning the code...
+  call git clone %RepositoryAddress% %CheckoutDir%
+  call git remote add origin %RepositoryAddress%
+  echo.
+)
 
+cd %CheckoutDir%
+call git fetch --all
+call git pull --all
+
+if defined CheckoutBranch (
+  call git checkout --track origin/%CheckoutBranch%
+  call git pull
+)
 
 
 cd %InitialDir%
