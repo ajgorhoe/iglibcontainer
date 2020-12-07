@@ -6,30 +6,29 @@ set StoredErrorLevel=0
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
+set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.igcpp.git
+rem https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
+
 set CheckoutDir=codedoc_develop
 set CheckoutBranch=master
 
-IF DEFINED ScriptDir (SET ScriptDir) ELSE (set ScriptDir=%~dp0)
-IF NOT DEFINED InitialDir (SET InitialDir=%CD%)
+set DirLocal=%~dp0
+SET InitialDir=%CD%
+set BaseScriptDir=%ScriptDir%\..\scripts
+set BaseSettingsScript=%SettingsScriptDir%\Settings.bat
 
-set SettingsScriptDir=%ScriptDir%\..\scripts
-set SettingsScript=%SettingsScriptDir%\Settings_Git.bat
-set PrintSettingsScript=%SettingsScriptDir%\PrintSettings_Git.bat
-set UpdateScript=%SettingsScriptDir%\Update_Git.bat
-
-
-call %SettingsScript% %*
+rem get information on the script:
+call %BaseSettingsScript%
 
 
-cd %ScriptDir%
+
+rem Call the appropriate settings script:
+call %SettingsScript_GitModule% %RepositoryAddress% %CheckoutDir% %CheckoutBranch%
+
+call %GitUpdateModuleScript%
 
 
-if not exist %CheckoutDir%\.git (
-  git clone %RepositoryAddress%  "%CheckoutDir%"
-)
-
-
+:finalize
 
 cd %InitialDir%
 
