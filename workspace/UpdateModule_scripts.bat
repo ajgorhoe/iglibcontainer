@@ -6,8 +6,8 @@ set StoredErrorLevel=0
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.igcpp.git
-set ModuleDirRelative=igcpp
+set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.scripts.git
+set ModuleDirRelative=scripts
 set CheckoutBranch=master
 
 set ScriptDir=%~dp0
