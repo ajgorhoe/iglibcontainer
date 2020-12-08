@@ -1,13 +1,11 @@
 
-This is a container repository for IGLib's prescribed directory structure that 
-contains individual projects included at the appropriate locations.
+This is a container for IGLib's prescribed directory structure and contains
+means for checking out the submodules.
 
-There are several branch for different mechanisms of checkouts:
+Two different approaches are supported:
+* Check out via batch scripts on the following main branches:
+  * master
+  * checkout_with_batch_files
+* Module check out via Git Submodules on the following main branches:
+  * checkout_via_submodules
 
-* nomerge/checkout_with_batch_files - IGLib projects are checked out via
-    batch scripts.
-* nomerge/checkout_via_submodules - IGLIB projects are checked out via
-  submodules.
-* master branch contains combination of both. Care must be taken about 
-    not overriding the dubmodule definitions when working on the masteer
-	branch.
