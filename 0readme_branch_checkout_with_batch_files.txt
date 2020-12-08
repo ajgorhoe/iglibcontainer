@@ -6,3 +6,6 @@ The branch should NOT BE MERGED into other main branches, and other main branche
 to add features. For a list of main branches and their functionality, see 
 0readme_IGLibContainer.txt .
 
+IMPORTANT:
+Before running other updating scripts, you need to run InitScriptsDir.bat!
+
