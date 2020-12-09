@@ -16,7 +16,7 @@ echo Updating modules in the directory:
 echo   %ScriptDir%
 echo.
 
-call %ScriptDir%\InitScriptDir.bat
+call %ScriptDir%..\InitScriptDir.bat
 
 call %ScriptDir%\UpdateModule_data.bat
 call %ScriptDir%\UpdateModule_igapp.bat
