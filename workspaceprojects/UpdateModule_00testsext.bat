@@ -30,11 +30,11 @@ set InitialDir=%CD%
 set CheckoutBranch=""
 
 rem Hardcoded parameters (Change with module, overridable via cmd. args.):
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.igcpp.git
-set ModuleDirRelative=igcpp
+set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspaceprojects.00testsext.git
+set ModuleDirRelative=00testsext
 set CheckoutBranch=master
 rem Non-overridable:
-set ScriptLibraryDir=%ScriptDir%\scripts\
+set ScriptLibraryDir=%ScriptDir%..\workspace\scripts\
 
 rem Derived parameters:
 set ModuleContainingDir=%ScriptDir%
