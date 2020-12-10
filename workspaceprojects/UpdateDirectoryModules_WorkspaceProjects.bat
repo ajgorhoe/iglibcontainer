@@ -5,12 +5,12 @@ rem other models that are directly included in the containing directory.
 @echo off
 rem Start local context, such that generation script does not have side effects:
 setlocal
-set StoredErrorLevel=0
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
 set ScriptDir=%~dp0
 set InitialDir=%CD%
+set PrimaryInitializationScript=%ScriptDir%..\workspace\InitScriptDir.bat
 
 echo.
 echo.
@@ -18,8 +18,17 @@ echo.
 echo Updating modules in the directory:
 echo   %ScriptDir%
 echo.
+echo.
 
-call %ScriptDir%\InitScriptDir.bat
+if exist "%PrimaryInitializationScript%" (
+ echo Calling primary initialization script:
+ echo   call "%PrimaryInitializationScript%" %*
+ call "%PrimaryInitializationScript%" %*
+) else (
+  echo WARNING: Primary initialization script does not exist:
+  echo   "%PrimaryInitializationScript%"
+  echo   The workspace/scripts/ module may not be initialized properly.
+)
 
 call %ScriptDir%\UpdateModule_00tests.bat
 call %ScriptDir%\UpdateModule_00testsext.bat

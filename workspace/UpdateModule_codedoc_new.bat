@@ -41,15 +41,25 @@ set ModuleContainingDir=%ScriptDir%
 set ModuleDir=%ModuleContainingDir%%ModuleDirRelative%
 set UpdateModuleScript=%ScriptLibraryDir%UpdateModule.bat
 
-echo.
-echo.
-if 1 NEQ 0 (
+if 0 NEQ 0 (
+  rem Test output; this can also be excluded.
+  echo.
+  echo.
   echo In %0: Updating module %ModuleDirRelative%
   echo Calling: %UpdateModuleScript%
   echo Script dir: %ScriptDir%
   echo ...
 )
-
+if not exist %UpdateModuleScript% (
+  echo.
+  echo.
+  echo ERROR: The module updating script does not exist:
+  echo   %UpdateModuleScript%
+  echo The operation cannot be performed.
+  goto finalize
+  echo.
+  echo.
+)
 call %UpdateModuleScript% %RepositoryAddress% "%ModuleDir%" %CheckoutBranch%
 
 
