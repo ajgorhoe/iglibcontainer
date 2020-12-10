@@ -11,9 +11,9 @@ ver > nul
 
 set ScriptDir=%~dp0
 set InitialDir=%CD%
+set PrimaryScriptDir=%ScriptDir%scripts\
 set PrimaryInitializationScript=%ScriptDir%InitScriptDir.bat
 set SecondaryInitializationScript=%ScriptDir%UpdateModule_scripts.bat
-set PrimaryScriptDir=%ScriptDir%scripts\
 
 echo.
 echo.
@@ -46,8 +46,11 @@ if %IsPrimaryScriptDirUpdated% EQU 0 (
 if %IsPrimaryScriptDirUpdated% EQU 0 (
   if not exist "%PrimaryScriptDir%" (
     echo.
+	echo.
     echo ERROR: Neither primary nor secondary initialization script could 
 	echo   be called to uppdate the scripts/ directory.
+	echo Operation aborted.
+	echo.
 	echo.
 	goto finalize
   ) else (
