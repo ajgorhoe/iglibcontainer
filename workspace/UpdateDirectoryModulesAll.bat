@@ -1,4 +1,9 @@
 
+rem This scripts runs other scripts that include ALL IGLib-related and
+rem other models included in any containing directory. This is done by
+rem successivelly calling other scripts that update modules in specific
+rem principa directories in the prescribed structure, such as workspace, workspaceprojects, workspace/base, etc.
+
 @echo off
 rem Start local context, such that generation script does not have side effects:
 setlocal
@@ -11,10 +16,17 @@ set InitialDir=%CD%
 
 echo.
 echo.
-echo.
-echo Updating modules in the directory:
+echo Updating IGLib modules in ALL directories...
 echo   %ScriptDir%
 echo.
+
+set PrimaryScript=%ScriptDir%\InitScriptDir.bat
+set PrimaryScriptDir=%ScriptDir%\scripts\
+
+if not exist "%PrimaryScriptDir%" (
+  if 
+)
+
 
 call %ScriptDir%\InitScriptDir.bat
 

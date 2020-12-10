@@ -1,4 +1,7 @@
 
+rem This scripts runs other scripts that include those IGLib-related and
+rem other models that are directly included in the containing directory.
+
 @echo off
 rem Start local context, such that generation script does not have side effects:
 setlocal
