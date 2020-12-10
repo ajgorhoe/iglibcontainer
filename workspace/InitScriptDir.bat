@@ -13,17 +13,40 @@ set CheckoutBranch=master
 
 set ScriptDir=%~dp0
 set InitialDir=%CD%
-
 set ContainingDir=%ScriptDir%
+set PrimaryScriptDir=%ScriptDir%scripts
+set PrimaryInitializationScript=%ScriptDir%InitScriptDir.bat
+set SecondaryInitializationScript=%ScriptDir%UpdateModule_scripts.bat
 
+rem Try to ensure that the scripts/ directory is updated:
+set IsPrimaryScriptDirUpdated=0
+if exist "%PrimaryScriptDir%" (
+  if exist "%SecondaryInitializationScript%" (
+    rem If possible, call the secondary initialization script instead
+	rem of the primary one:
+	echo Calling secondary initialization script:
+	echo   call "%SecondaryInitializationScript%" %*
+    call "%SecondaryInitializationScript%" %*
+	set IsPrimaryScriptDirUpdated=1
+	rem We can skip the other work because initialization or update 
+	rem of the scripts/ directory was already performed:
+    goto finalize
+  )
+)
+
+rem The usual script for updating the scripts/ module could not be called.
+rem Attempt to initialize/update the module with the code block  below:
 cd %ContainingDir%
 
 echo.
 echo.
-echo Initializing the scritp directory:
+echo Initializing the scritps module (BOOTSTRAPPING init script):
 echo   %ContainingDir%\%CheckoutDir%
 echo   Repository: %RepositoryAddress%
 echo   Branch: %CheckoutBranch%
+echo   From script:
+echo   %0
+echo.
 
 if not exist "%CheckoutDir%\.git\" (
   echo Repository not cloned yet.
@@ -62,7 +85,6 @@ if defined CheckoutBranch (
   REM echo Pulling all tracked branches...
   REM call git pull origin
 )
-
 
 :finalize
 echo.
