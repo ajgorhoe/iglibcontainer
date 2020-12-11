@@ -7,70 +7,35 @@ rem principa directories in the prescribed structure, such as workspace, workspa
 @echo off
 rem Start local context, such that generation script does not have side effects:
 setlocal
-set StoredErrorLevel=0
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
 set ScriptDir=%~dp0
 set InitialDir=%CD%
-set PrimaryScriptDir=%ScriptDir%scripts\
 set PrimaryInitializationScript=%ScriptDir%InitScriptDir.bat
-set SecondaryInitializationScript=%ScriptDir%UpdateModule_scripts.bat
 
 echo.
 echo.
-echo Updating IGLib modules in ALL directories...
+echo.
+echo Updating IGLib modules in ALL main directories:
+echo   %ScriptDir%
 echo.
 echo.
 
-
-rem Try to ensure that the scripts/ directory is updated:
-set IsPrimaryScriptDirUpdated=0
-if exist "%PrimaryScriptDir%" (
-  if exist %SecondaryInitializationScript% (
-    rem Reset errorlevel:
-	echo Calling secondary initialization script:
-	echo   call "%SecondaryInitializationScript%" %*
-    call "%SecondaryInitializationScript%" %*
-	set IsPrimaryScriptDirUpdated=1
-  )
-)
-if %IsPrimaryScriptDirUpdated% EQU 0 (
-  if exist "%PrimaryInitializationScript%" (
-	  echo Calling primary initialization script:
-	  echo   call "%PrimaryInitializationScript%" %*
-      call "%PrimaryInitializationScript%" %*
-	  set IsPrimaryScriptDirUpdated=1
-
-  )
-)
-if %IsPrimaryScriptDirUpdated% EQU 0 (
-  if not exist "%PrimaryScriptDir%" (
-    echo.
-	echo.
-    echo ERROR: Neither primary nor secondary initialization script could 
-	echo   be called to uppdate the scripts/ directory.
-	echo Operation aborted.
-	echo.
-	echo.
-	goto finalize
-  ) else (
-      echo.
-      echo WARNING: Neither primary nor secondary initialization script could 
-	  echo   be called to uppdate the scripts/ directory.
-	  echo This may not be fatal because the scripts/ dir. exists.
-      echo.
-  )
+if exist "%PrimaryInitializationScript%" (
+ echo Calling primary initialization script:
+ echo   call "%PrimaryInitializationScript%" %*
+ call "%PrimaryInitializationScript%" %*
+) else (
+  echo WARNING: Primary initialization script does not exist:
+  echo   "%PrimaryInitializationScript%"
+  echo   The workspace/scripts/ module may not be initialized properly.
 )
 
 
-call %ScriptDir%\UpdateModule_scripts.bat
-call %ScriptDir%\UpdateModule_codedoc_new.bat
-call %ScriptDir%\UpdateModule_codedoc.bat
-call %ScriptDir%\UpdateModule_igcpp.bat
-call %ScriptDir%\UpdateModule_z_courses.bat
-call %ScriptDir%\UpdateModule_applications.bat
-call %ScriptDir%\UpdateModule_develop_cobik.bat
+call %ScriptDir%\base\UpdateDirectoryModules_Base.bat 
+call %ScriptDir%\UpdateDirectoryModules_Workspace.bat
+call %ScriptDir%\..\workspaceprojects\UpdateDirectoryModules_WorkspaceProjects.bat
 
 :finalize
 
