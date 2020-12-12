@@ -1,6 +1,8 @@
 
 rem This scripts runs other scripts that include those IGLib-related and
 rem other models that are directly included in the containing directory.
+rem Command-line arguments:
+rem   %1: branch / tag name that is checked out (optional, default is master)
 
 @echo off
 rem Start local context, such that generation script does not have side effects:
@@ -31,14 +33,14 @@ if exist "%PrimaryInitializationScript%" (
 )
 
 rem Initialization of scripts/ module below should be performed first...
-call %ScriptDir%\UpdateModule_scripts.bat
+call %ScriptDir%\UpdateModule_scripts.bat "" "" %*
 
-call %ScriptDir%\UpdateModule_codedoc_new.bat
-call %ScriptDir%\UpdateModule_codedoc.bat
-call %ScriptDir%\UpdateModule_igcpp.bat
-call %ScriptDir%\UpdateModule_z_courses.bat
-call %ScriptDir%\UpdateModule_applications.bat
-call %ScriptDir%\UpdateModule_develop_cobik.bat
+call %ScriptDir%\UpdateModule_codedoc_new.bat "" "" %*
+call %ScriptDir%\UpdateModule_codedoc.bat "" "" %*
+call %ScriptDir%\UpdateModule_igcpp.bat "" "" %*
+call %ScriptDir%\UpdateModule_z_courses.bat "" "" %*
+call %ScriptDir%\UpdateModule_applications.bat "" "" %*
+call %ScriptDir%\UpdateModule_develop_cobik.bat "" "" %*
 
 :finalize
 cd %InitialDir%

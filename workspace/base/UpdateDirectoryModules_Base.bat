@@ -30,13 +30,13 @@ if exist "%PrimaryInitializationScript%" (
   echo   The workspace/scripts/ module may not be initialized properly.
 )
 
-call %ScriptDir%\UpdateModule_data.bat
-call %ScriptDir%\UpdateModule_igapp.bat
-call %ScriptDir%\UpdateModule_iglib.bat
-call %ScriptDir%\UpdateModule_igsandbox.bat
-call %ScriptDir%\UpdateModule_igsolutions.bat
-call %ScriptDir%\UpdateModule_igtest.bat
-call %ScriptDir%\UpdateModule_unittests.bat
+call %ScriptDir%\UpdateModule_data.bat "" "" %*
+call %ScriptDir%\UpdateModule_igapp.bat "" "" %*
+call %ScriptDir%\UpdateModule_iglib.bat "" "" %*
+call %ScriptDir%\UpdateModule_igsandbox.bat "" "" %*
+call %ScriptDir%\UpdateModule_igsolutions.bat "" "" %*
+call %ScriptDir%\UpdateModule_igtest.bat "" "" %*
+call %ScriptDir%\UpdateModule_unittests.bat "" "" %*
 
 
 cd %InitialDir%

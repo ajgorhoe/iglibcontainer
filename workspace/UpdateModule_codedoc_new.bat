@@ -60,7 +60,8 @@ if not exist %UpdateModuleScript% (
   echo.
   echo.
 )
-call %UpdateModuleScript% %RepositoryAddress% "%ModuleDir%" %CheckoutBranch%
+call %UpdateModuleScript% %*
+rem   %RepositoryAddress% "%ModuleDir%" %CheckoutBranch%
 
 
 :finalize

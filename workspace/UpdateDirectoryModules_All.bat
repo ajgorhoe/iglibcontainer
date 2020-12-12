@@ -3,6 +3,8 @@ rem This scripts runs other scripts that include ALL IGLib-related and
 rem other models included in any containing directory. This is done by
 rem successivelly calling other scripts that update modules in specific
 rem principa directories in the prescribed structure, such as workspace, workspaceprojects, workspace/base, etc.
+rem Command-line arguments:
+rem   %1: branch / tag name that is checked out (optional, default is master)
 
 @echo off
 rem Start local context, such that generation script does not have side effects:
@@ -33,9 +35,9 @@ if exist "%PrimaryInitializationScript%" (
 )
 
 
-call %ScriptDir%\base\UpdateDirectoryModules_Base.bat 
-call %ScriptDir%\UpdateDirectoryModules_Workspace.bat
-call %ScriptDir%\..\workspaceprojects\UpdateDirectoryModules_WorkspaceProjects.bat
+call %ScriptDir%\base\UpdateDirectoryModules_Base.bat %1
+call %ScriptDir%\UpdateDirectoryModules_Workspace.bat %1
+call %ScriptDir%\..\workspaceprojects\UpdateDirectoryModules_WorkspaceProjects.bat %1
 
 :finalize
 
