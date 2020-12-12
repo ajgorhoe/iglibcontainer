@@ -30,9 +30,9 @@ if exist "%PrimaryInitializationScript%" (
   echo   The workspace/scripts/ module may not be initialized properly.
 )
 
-call %ScriptDir%\UpdateModule_00tests.bat
-call %ScriptDir%\UpdateModule_00testsext.bat
-call %ScriptDir%\UpdateModule_anka.bat
+call %ScriptDir%\UpdateModule_00tests.bat "" "" %*
+call %ScriptDir%\UpdateModule_00testsext.bat "" "" %*
+call %ScriptDir%\UpdateModule_anka.bat "" "" %*
 
 
 cd %InitialDir%
