@@ -30,8 +30,8 @@ set InitialDir=%CD%
 set CheckoutBranch=""
 
 rem Hardcoded parameters (Change with module, overridable via cmd. args.):
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.base.igsandbox.git
-set ModuleDirRelative=igsandbox
+set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.base.iglearn.git
+set ModuleDirRelative=iglearn
 set CheckoutBranch=master
 rem Non-overridable:
 set ScriptLibraryDir=%ScriptDir%..\scripts\
