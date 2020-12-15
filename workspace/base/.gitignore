@@ -3,7 +3,9 @@
 /data
 /igapp
 /iglib
+/iglearn
 /igsandbox
 /igsolutions
 /igtest
+/shelldev
 /unittests

@@ -33,6 +33,7 @@ if exist "%PrimaryInitializationScript%" (
 call %ScriptDir%\UpdateModule_data.bat "" "" %*
 call %ScriptDir%\UpdateModule_igapp.bat "" "" %*
 call %ScriptDir%\UpdateModule_iglib.bat "" "" %*
+call %ScriptDir%\UpdateModule_iglearn.bat "" "" %*
 call %ScriptDir%\UpdateModule_igsandbox.bat "" "" %*
 call %ScriptDir%\UpdateModule_igsolutions.bat "" "" %*
 call %ScriptDir%\UpdateModule_igtest.bat "" "" %*
