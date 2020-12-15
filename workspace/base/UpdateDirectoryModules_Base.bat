@@ -36,6 +36,7 @@ call %ScriptDir%\UpdateModule_iglib.bat "" "" %*
 call %ScriptDir%\UpdateModule_igsandbox.bat "" "" %*
 call %ScriptDir%\UpdateModule_igsolutions.bat "" "" %*
 call %ScriptDir%\UpdateModule_igtest.bat "" "" %*
+call %ScriptDir%\UpdateModule_shelldev.bat "" "" %*
 call %ScriptDir%\UpdateModule_unittests.bat "" "" %*
 
 
