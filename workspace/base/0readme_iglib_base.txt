@@ -19,7 +19,7 @@ d:/backup_sync/bk_code/git/ig/workspace/base/iglib.git/
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.iglib.git
 
-
+**************
 IGLibCore:
 origin
 local
@@ -27,7 +27,7 @@ d:/backup_sync/bk_code/git/ig/misc/iglib_modules/IGLibCore/
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.modules.iglibcore.git
 
-
+******************
 EventAggregator:
 origin
 local
@@ -38,6 +38,7 @@ https://gitlab.com/ajgorhoe/IGLib.misc.EventAggregator.git
 
 base/data:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.data.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/data.git/
 zz_origin_gitlab
@@ -46,6 +47,7 @@ https://gitlab.com/ajgorhoe/iglib.workspace.base.data.git
 
 base/igapp:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.igapp.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/igapp.git/
 zz_origin_gitlab
@@ -54,23 +56,16 @@ d:/backup_sync/bk_code/git/ig/workspace/base/igapp.git/
 
 base/iglearn:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.iglearn.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/iglearn.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.iglearn.git
 
 
-base/iglib:
-origin
-local
-d:/backup_sync/bk_code/git/ig/workspace/base/iglib.git/
-zz_origin_gitlab
-https://gitlab.com/ajgorhoe/iglib.workspace.base.iglib.git
-
-
-
 base/igsandbox:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.igsandbox.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/igsandbox.git/
 zz_origin_gitlab
@@ -79,6 +74,7 @@ https://gitlab.com/ajgorhoe/iglib.workspace.base.igsandbox.git
 
 base/igsolutions:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.igsolutions.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/igsolutions.git/
 zz_origin_gitlab
