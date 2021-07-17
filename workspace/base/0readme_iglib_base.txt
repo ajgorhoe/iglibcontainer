@@ -4,6 +4,7 @@ REPOSITORIES
 
 IGLibContainer:
 origin
+https://github.com/ajgorhoe/iglibcontainer.git
 local
 d:/backup_sync/bk_code/git/ig/IGLibContainer/
 zz_origin_gitlab
@@ -12,6 +13,7 @@ https://gitlab.com/ajgorhoe/iglibcontainer.git
 
 base/iglib:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.iglib.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/iglib.git/
 zz_origin_gitlab
