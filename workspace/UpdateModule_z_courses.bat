@@ -30,7 +30,7 @@ set InitialDir=%CD%
 set CheckoutBranch=""
 
 rem Hardcoded parameters (Change with module, overridable via cmd. args.):
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.z_courses.git
+set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.z_courses.git
 set ModuleDirRelative=z_courses
 set CheckoutBranch=master
 rem Non-overridable:

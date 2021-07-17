@@ -116,8 +116,58 @@ zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.unittests.git
 
 
+
+======================
+
+workspace/applications:
+origin
+https://github.com/ajgorhoe/IGLib.workspace.applications.git
+local
+d:/backup_sync/bk_code/git/ig/workspace/applications.git/
+zz_origin_gitlab
+https://gitlab.com/ajgorhoe/iglib.workspace.applications.git
+
+
+workspace/codedoc_new:
+origin
+https://github.com/ajgorhoe/IGLib.workspace.codedoc_new.git
+local
+d:/backup_sync/bk_code/git/ig/workspace/codedoc_new/
+zz_origin_gitlab
+https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
+
+
+workspace/doc/codedoc:
+origin
+https://github.com/ajgorhoe/IGLib.workspace.doc.codedoc.git
+local
+d:/backup_sync/bk_code/git/ig/workspace/doc/codedoc.git/
+zz_origin_gitlab
+https://gitlab.com/ajgorhoe/iglib.workspace.codedoc.git
+
+
+workspace/develop_cobik:
+origin
+https://github.com/ajgorhoe/IGLib.workspace.develop_cobik.git
+local
+d:/backup_sync/bk_code/git/ig/workspace/develop_cobik.git/
+zz_origin_gitlab
+https://gitlab.com/ajgorhoe/iglib.workspace.develop_cobik.git
+
+
+workspace/igcpp:
+origin
+https://github.com/ajgorhoe/IGLib.workspace.igcpp.git
+local
+d:/backup_sync/bk_code/git/ig/workspace/igcpp.git/
+zz_origin_gitlab
+https://gitlab.com/ajgorhoe/iglib.workspace.igcpp.git
+
+
+
 workspace/scripts:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.scripts.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/scripts.git/
 zz_origin_gitlab
@@ -125,24 +175,9 @@ https://gitlab.com/ajgorhoe/iglib.workspace.scripts.git
 
 
 
-workspace/doc/codedoc:
-origin
-local
-d:/backup_sync/bk_code/git/ig/workspace/doc/codedoc.git/
-zz_origin_gitlab
-d:/backup_sync/bk_code/git/ig/workspace/doc/codedoc.git/
-
-
-workspace/igcpp:
-origin
-local
-d:/backup_sync/bk_code/git/ig/workspace/igcpp.git/
-zz_origin_gitlab
-https://gitlab.com/ajgorhoe/iglib.workspace.igcpp.git
-
-
 workspace/z_courses:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.z_courses.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/z_courses.git/
 zz_origin_gitlab
@@ -150,32 +185,7 @@ https://gitlab.com/ajgorhoe/iglib.workspace.z_courses.git
 
 
 
-workspace/codedoc_new:
-origin
-d:/backup_sync/bk_code/git/ig/workspace/codedoc_new/
-local
-zz_origin_gitlab
-https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
-
-
-
-
-workspace/applications:
-origin
-local
-d:/backup_sync/bk_code/git/ig/workspace/applications.git/
-zz_origin_gitlab
-https://gitlab.com/ajgorhoe/iglib.workspace.applications.git
-
-
-workspace/develop_cobik:
-origin
-local
-d:/backup_sync/bk_code/git/ig/workspace/develop_cobik.git/
-zz_origin_gitlab
-https://gitlab.com/ajgorhoe/iglib.workspace.develop_cobik.git
-
-
+==============================
 
 workspaceprojects/00tests:
 origin

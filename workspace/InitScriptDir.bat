@@ -11,8 +11,7 @@ set StoredErrorLevel=0
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.scripts.git
-rem https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
+set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.scripts.git
 set CheckoutDir=scripts
 set CheckoutBranch=master
 

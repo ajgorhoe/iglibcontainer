@@ -30,7 +30,7 @@ set InitialDir=%CD%
 set CheckoutBranch=""
 
 rem Hardcoded parameters (Change with module, overridable via cmd. args.):
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.develop_cobik.git
+set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.develop_cobik.git
 set ModuleDirRelative=develop_cobik
 set CheckoutBranch=master
 rem Non-overridable:
