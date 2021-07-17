@@ -83,6 +83,7 @@ https://gitlab.com/ajgorhoe/iglib.workspace.base.igsolutions.git
 
 base/igtest:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.igtest.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/igtest.git
 zz_origin_gitlab
@@ -91,6 +92,7 @@ https://gitlab.com/ajgorhoe/iglib.workspace.base.igtest.git
 
 base/shelldev:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.shelldev.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/shelldev.git/
 zz_origin_gitlab
@@ -100,6 +102,7 @@ https://gitlab.com/ajgorhoe/iglib.workspace.base.shelldev.git
 
 base/unittests:
 origin
+https://github.com/ajgorhoe/IGLib.workspace.base.unittests.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/unittests.git/
 zz_origin_gitlab
