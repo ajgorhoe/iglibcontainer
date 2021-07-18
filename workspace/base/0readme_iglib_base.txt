@@ -189,6 +189,7 @@ https://gitlab.com/ajgorhoe/iglib.workspace.z_courses.git
 
 workspaceprojects/00tests:
 origin
+https://github.com/ajgorhoe/IGLib.workspaceprojects.00tests.git
 local
 d:/backup_sync/bk_code/git/ig/workspaceprojects/00tests.git/
 zz_origin_gitlab
@@ -198,6 +199,7 @@ https://gitlab.com/ajgorhoe/iglib.workspaceprojects.00tests.git
 
 workspaceprojects/00testsext:
 origin
+https://github.com/ajgorhoe/IGLib.workspaceprojects.00testsext.git
 local
 d:/backup_sync/bk_code/git/ig/workspaceprojects/00testsext.git/
 zz_origin_gitlab
@@ -206,14 +208,20 @@ https://gitlab.com/ajgorhoe/iglib.workspaceprojects.00testsext.git
 
 workspaceprojects/anka
 origin
+https://github.com/ajgorhoe/IGLib.workspaceprojects.anka.git
 local
 d:/backup_sync/bk_code/git/ig/workspaceprojects/anka.git/
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspaceprojects.anka.git
 
 
+====================
 
-
+other/anka/anka_html_basics
+origin
+https://gitlab.com/AnkitaSL/vaje.anka_html_basics.git
+zz_origin_github
+https://github.com/ajgorhoe/other-anka-anka_html_basics.git
 
 
 
