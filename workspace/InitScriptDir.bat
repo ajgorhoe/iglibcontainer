@@ -11,7 +11,17 @@ set StoredErrorLevel=0
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.scripts.git
+
+call %~dp0\UpdateRepo.bat %~dp0\Settings_scripts.bat
+
+ver > nul
+
+rem The LEGACY code below is skipped!
+goto finalize
+
+
+
+set RepositoryAddress=https://github.com/ajgorhoe/IGLib.modules.IGLibScripts.git
 set CheckoutDir=scripts
 set CheckoutBranch=master
 
