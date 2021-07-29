@@ -41,8 +41,6 @@ set RemoteLocal=local
 
 set ModuleDir=%~dp0\%ModuleDirRelative%
 
-
-
 rem If command-line arguments were specified then interpret them as another command and run the command:
 if "%~1" NEQ "" (
     echo.
