@@ -2,70 +2,57 @@
 @echo off
 rem This script updates a specific IGLib's module by cloning its Git 
 rem repository (if necessary), and updating it to the current state.
-rem Module-dependent parameters are hard coded butt can be overridden
-rem by command-line parameters.
-rem Script calls .../workspace/scripts/UpdateModule.bat to do the job
-rem (that script can also be used for other modules not just IGLib).
-rem The underlying general script (UpdateModule.bat) can take parameters
-rem either via environment variables or command-line arguments (which have
-rem priority over env. variables).
-rem Command-line parameters:
-rem   %1: RepositoryAddress - URL of module's git repository
-rem   %2: ModuleDir - directory where module sgould be checked out.
-rem       Specified as absolute or relative path, the directory must either
-rem       already contain the cloned module (in which case the module is) 
-rem       just updated to the latest state) or it must not exist (otherwise
-rem       "git clone" would fail).
-rem   %3: CheckoutBranch - branch to be checked out (optional).
-rem See UpdateModule.bat for more precise specification.
+
+rem Bootstrap scripting such that update scripts are available:
+set BootStrapScripting=%~dp0..\%BootStrapScripting.bat
+echo.
+echo SCRIPT: BootStrapScripting: "%BootStrapScripting%"
+echo.
+if not exist "%BootStrapScripting%" (
+  echo.
+  echo ERROR: Variable BootStrapScripting does not contain a valid
+  echo   script path.
+  echo.
+  goto finalize
+)
+call "%BootStrapScripting%"
 
 rem Start local context, such that generation script does not have side effects:
 setlocal
-set StoredErrorLevel=0
 rem Reset the error level (by running an always successfull command):
 ver > nul
-rem Basic directories & default parameter values:
-set ScriptDir=%~dp0
-set InitialDir=%CD%
-set CheckoutBranch=""
 
-rem Hardcoded parameters (Change with module, overridable via cmd. args.):
-set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.shelldev.git
+rem Repository update parameters:
 set ModuleDirRelative=shelldev
 set CheckoutBranch=master
-rem Non-overridable:
-set ScriptLibraryDir=%ScriptDir%..\scripts\
+set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.shelldev.git
+set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.base.shelldev.git
+set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/base/shelldev.git
+set Remote=origin
+set RemoteSecondary=zz_origin_gitlab
+set RemoteLocal=local
 
 rem Derived parameters:
-set ModuleContainingDir=%ScriptDir%
-set ModuleDir=%ModuleContainingDir%%ModuleDirRelative%
-set UpdateModuleScript=%ScriptLibraryDir%UpdateModule.bat
+set ModuleDir=%~dp0%ModuleDirRelative%
 
-if 0 NEQ 0 (
-  rem Test output; this can also be excluded.
+
+echo.
+echo SCRIPT: UpdateRepo: "%UpdateRepo%"
+echo.
+if not exist "%UpdateRepo%" (
   echo.
+  echo ERROR: Variable UpdateRepo does not contain a valid script path.
+  echo   BoorstrapScripting probably not performed correctly.
   echo.
-  echo In %0: Updating module %ModuleDirRelative%
-  echo Calling: %UpdateModuleScript%
-  echo Script dir: %ScriptDir%
-  echo ...
-)
-if not exist %UpdateModuleScript% (
-  echo.
-  echo.
-  echo ERROR: The module updating script does not exist:
-  echo   %UpdateModuleScript%
-  echo The operation cannot be performed.
   goto finalize
-  echo.
-  echo.
 )
-call %UpdateModuleScript% %*
-rem   %RepositoryAddress% "%ModuleDir%" %CheckoutBranch%
+
+rem Finally, perform repository clone / update by using the scripts
+rem prepared in the bootstrapping stage:
+"%UpdateRepo%" %*
+
 
 :finalize
-
-cd %InitialDir%
 
 
 endlocal
