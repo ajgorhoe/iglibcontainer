@@ -6,7 +6,7 @@ IGLibContainer:
 origin
 https://github.com/ajgorhoe/iglibcontainer.git
 local
-d:/backup_sync/bk_code/git/ig/IGLibContainer/
+d:/backup_sync/bk_code/git/ig/IGLibContainer
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglibcontainer.git
 
@@ -17,7 +17,7 @@ IGLibCore:
 origin
 https://github.com/ajgorhoe/IGLib.modules.IGLibCore.git
 local
-d:/backup_sync/bk_code/git/ig/misc/iglib_modules/IGLibCore/
+d:/backup_sync/bk_code/git/ig/misc/iglib_modules/IGLibCore
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.modules.iglibcore.git
 
@@ -25,7 +25,7 @@ EventAggregator:
 origin
 https://github.com/ajgorhoe/IGLib.modules.IGLibEventAggregator.git
 local
-d:/backup_sync/bk_code/git/ig/misc/iglib_misc/EventAggregator/
+d:/backup_sync/bk_code/git/ig/misc/iglib_misc/EventAggregator
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/IGLib.misc.EventAggregator.git
 zx_origin_gitbucket
@@ -132,7 +132,7 @@ workspace/codedoc_new:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.codedoc_new.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/codedoc_new/
+d:/backup_sync/bk_code/git/ig/workspace/codedoc_new
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
 
