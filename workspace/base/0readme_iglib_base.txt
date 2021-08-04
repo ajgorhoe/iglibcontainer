@@ -49,7 +49,7 @@ https://github.com/ajgorhoe/IGLib.workspace.base.igapp.git
 local
 d:/backup_sync/bk_code/git/ig/workspace/base/igapp.git
 zz_origin_gitlab
-d:/backup_sync/bk_code/git/ig/workspace/base/igapp.git
+https://gitlab.com/ajgorhoe/iglib.workspace.base.igapp.git
 
 
 base/iglearn:
