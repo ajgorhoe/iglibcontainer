@@ -22,18 +22,8 @@ setlocal
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-rem Repository update parameters:
-set ModuleDirRelative=codedoc_new
-set CheckoutBranch=master
-set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.codedoc_new.git
-set RepositoryAddressSecondary=
-set RepositoryAddressLocal=
-set Remote=origin
-set RemoteSecondary=zz_origin_gitlab
-set RemoteLocal=local
-
-rem Derived parameters:
-set ModuleDir=%~dp0%ModuleDirRelative%
+rem Set repository update parameters:
+call "%~dp0\SettingsIGLibScripts.bat" %*
 
 
 echo.
