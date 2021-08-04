@@ -38,7 +38,7 @@ base/data:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.base.data.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/base/data.git/
+d:/backup_sync/bk_code/git/ig/workspace/base/data.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.data.git
 
@@ -47,9 +47,9 @@ base/igapp:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.base.igapp.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/base/igapp.git/
+d:/backup_sync/bk_code/git/ig/workspace/base/igapp.git
 zz_origin_gitlab
-d:/backup_sync/bk_code/git/ig/workspace/base/igapp.git/
+d:/backup_sync/bk_code/git/ig/workspace/base/igapp.git
 
 
 base/iglearn:
@@ -65,7 +65,7 @@ base/iglib:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.base.iglib.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/base/iglib.git/
+d:/backup_sync/bk_code/git/ig/workspace/base/iglib.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.iglib.git
 
@@ -74,7 +74,7 @@ base/igsandbox:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.base.igsandbox.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/base/igsandbox.git/
+d:/backup_sync/bk_code/git/ig/workspace/base/igsandbox.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.igsandbox.git
 
@@ -83,7 +83,7 @@ base/igsolutions:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.base.igsolutions.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/base/igsolutions.git/
+d:/backup_sync/bk_code/git/ig/workspace/base/igsolutions.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.igsolutions.git
 
@@ -101,7 +101,7 @@ base/shelldev:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.base.shelldev.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/base/shelldev.git/
+d:/backup_sync/bk_code/git/ig/workspace/base/shelldev.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.shelldev.git
 
@@ -111,7 +111,7 @@ base/unittests:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.base.unittests.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/base/unittests.git/
+d:/backup_sync/bk_code/git/ig/workspace/base/unittests.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.base.unittests.git
 
@@ -123,7 +123,7 @@ workspace/applications:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.applications.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/applications.git/
+d:/backup_sync/bk_code/git/ig/workspace/applications.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.applications.git
 
@@ -141,7 +141,7 @@ workspace/doc/codedoc:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.doc.codedoc.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/doc/codedoc.git/
+d:/backup_sync/bk_code/git/ig/workspace/doc/codedoc.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.codedoc.git
 
@@ -150,7 +150,7 @@ workspace/develop_cobik:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.develop_cobik.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/develop_cobik.git/
+d:/backup_sync/bk_code/git/ig/workspace/develop_cobik.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.develop_cobik.git
 
@@ -159,7 +159,7 @@ workspace/igcpp:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.igcpp.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/igcpp.git/
+d:/backup_sync/bk_code/git/ig/workspace/igcpp.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.igcpp.git
 
@@ -169,7 +169,7 @@ workspace/scripts:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.scripts.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/scripts.git/
+d:/backup_sync/bk_code/git/ig/workspace/scripts.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.scripts.git
 
@@ -179,7 +179,7 @@ workspace/z_courses:
 origin
 https://github.com/ajgorhoe/IGLib.workspace.z_courses.git
 local
-d:/backup_sync/bk_code/git/ig/workspace/z_courses.git/
+d:/backup_sync/bk_code/git/ig/workspace/z_courses.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspace.z_courses.git
 
@@ -191,7 +191,7 @@ workspaceprojects/00tests:
 origin
 https://github.com/ajgorhoe/IGLib.workspaceprojects.00tests.git
 local
-d:/backup_sync/bk_code/git/ig/workspaceprojects/00tests.git/
+d:/backup_sync/bk_code/git/ig/workspaceprojects/00tests.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspaceprojects.00tests.git
 
@@ -201,7 +201,7 @@ workspaceprojects/00testsext:
 origin
 https://github.com/ajgorhoe/IGLib.workspaceprojects.00testsext.git
 local
-d:/backup_sync/bk_code/git/ig/workspaceprojects/00testsext.git/
+d:/backup_sync/bk_code/git/ig/workspaceprojects/00testsext.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspaceprojects.00testsext.git
 
@@ -210,7 +210,7 @@ workspaceprojects/anka
 origin
 https://github.com/ajgorhoe/IGLib.workspaceprojects.anka.git
 local
-d:/backup_sync/bk_code/git/ig/workspaceprojects/anka.git/
+d:/backup_sync/bk_code/git/ig/workspaceprojects/anka.git
 zz_origin_gitlab
 https://gitlab.com/ajgorhoe/iglib.workspaceprojects.anka.git
 
