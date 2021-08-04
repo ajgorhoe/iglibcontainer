@@ -26,8 +26,8 @@ rem Repository update parameters:
 set ModuleDirRelative=codedoc_new
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.codedoc_new.git
-set RepositoryAddressSecondary=
-set RepositoryAddressLocal=
+set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
+set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/codedoc_new
 set Remote=origin
 set RemoteSecondary=zz_origin_gitlab
 set RemoteLocal=local
