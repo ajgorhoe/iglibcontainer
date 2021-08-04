@@ -26,8 +26,8 @@ rem Repository update parameters:
 set ModuleDirRelative=unittests
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.unittests.git
-set RepositoryAddressSecondary=
-set RepositoryAddressLocal=
+set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.base.unittests.git
+set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/base/unittests.git
 set Remote=origin
 set RemoteSecondary=zz_origin_gitlab
 set RemoteLocal=local
