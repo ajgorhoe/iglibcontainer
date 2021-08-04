@@ -10,6 +10,23 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 
+rem Bootstrap scripting such that update scripts are available:
+rem Important: bootstrapping must be called before settings, otherwise
+rem it would overrite the essential repository settings.
+set BootStrapScripting=%~dp0%BootStrapScripting.bat
+echo.
+echo SCRIPT: BootStrapScripting: "%BootStrapScripting%"
+echo.
+if not exist "%BootStrapScripting%" (
+  echo.
+  echo ERROR: Variable BootStrapScripting does not contain a valid
+  echo   script path.
+  echo.
+  goto finalize
+)
+call "%BootStrapScripting%"
+
+
 rem LEGACY code:
 rem Legacy code below is not needed any more (not even for execution 
 rem of legacy update scripts) because legacy scripts are now part of
@@ -39,11 +56,13 @@ REM )
 REM rem Initialization of scripts/ module below should be performed first...
 REM call %~dp0\UpdateModule_scripts.bat "" "" %*
 
+
+
 echo.
 echo UPDATING DIRECTORY MODULES: workspace/
 echo.
 
-rem Perform updates of individual contained in this directory:
+rem Perform updates of individual repos contained in this directory:
 rem
 rem Passing parameters in the way they are passed is kept in order to
 rem support legacy update scripts (although in this directory, all
