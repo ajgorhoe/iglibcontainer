@@ -8,39 +8,43 @@ setlocal
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-set ScriptDir=%~dp0
-set InitialDir=%CD%
-set PrimaryInitializationScript=%ScriptDir%..\InitScriptDir.bat
-
+rem Bootstrap scripting such that update scripts are available:
+rem Important: bootstrapping must be called before settings, otherwise
+rem it would overrite the essential repository settings.
+set BootStrapScripting=%~dp0..\%BootStrapScripting.bat
 echo.
+echo SCRIPT: BootStrapScripting: "%BootStrapScripting%"
 echo.
-echo.
-echo Updating modules in the directory:
-echo   %ScriptDir%
-echo.
-echo.
-
-if exist "%PrimaryInitializationScript%" (
- echo Calling primary initialization script:
- echo   call "%PrimaryInitializationScript%" %*
- call "%PrimaryInitializationScript%" %*
-) else (
-  echo WARNING: Primary initialization script does not exist:
-  echo   "%PrimaryInitializationScript%"
-  echo   The workspace/scripts/ module may not be initialized properly.
+if not exist "%BootStrapScripting%" (
+  echo.
+  echo ERROR: Variable BootStrapScripting does not contain a valid
+  echo   script path.
+  echo.
+  goto finalize
 )
-
-call %ScriptDir%\UpdateModule_data.bat "" "" %*
-call %ScriptDir%\UpdateModule_igapp.bat "" "" %*
-call %ScriptDir%\UpdateModule_iglib.bat "" "" %*
-call %ScriptDir%\UpdateModule_iglearn.bat "" "" %*
-call %ScriptDir%\UpdateModule_igsandbox.bat "" "" %*
-call %ScriptDir%\UpdateModule_igsolutions.bat "" "" %*
-call %ScriptDir%\UpdateModule_igtest.bat "" "" %*
-call %ScriptDir%\UpdateModule_shelldev.bat "" "" %*
-call %ScriptDir%\UpdateModule_unittests.bat "" "" %*
+call "%BootStrapScripting%"
 
 
-cd %InitialDir%
+echo.
+echo UPDATING DIRECTORY MODULES: workspace/base/
+echo.
+
+rem Perform updates of individual repos contained in this directory:
+rem
+rem Passing parameters in the way they are passed is kept in order to
+rem support legacy update scripts (although in this directory, all
+rem scripts have already been updated to the new modus operandi).
+call "%~dp0\UpdateModule_data.bat" "" "" %*
+call "%~dp0\UpdateModule_iglib.bat" "" "" %*
+call "%~dp0\UpdateModule_iglearn.bat" "" "" %*
+call "%~dp0\UpdateModule_igsandbox.bat" "" "" %*
+call "%~dp0\UpdateModule_igsolutions.bat" "" "" %*
+call "%~dp0\UpdateModule_igtest.bat" "" "" %*
+call "%~dp0\UpdateModule_shelldev.bat" "" "" %*
+call "%~dp0\UpdateModule_unittests.bat" "" "" %*
+
+
+:finalize
+
 endlocal
 
