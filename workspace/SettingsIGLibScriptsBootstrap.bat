@@ -24,7 +24,7 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 echo.
-echo SETTINGS for updating repository: IGLibScripts
+echo SETTINGS for bootstrapping IGLibScripts
 echo.
 
 rem Parameters for the update:
