@@ -19,12 +19,8 @@ call "%BootStrapScripting%"
 
 rem Start local context, such that generation script does not have side effects:
 setlocal
-set StoredErrorLevel=0
 rem Reset the error level (by running an always successfull command):
 ver > nul
-rem Basic directories & default parameter values:
-set ScriptDir=%~dp0
-set InitialDir=%CD%
 
 rem Repository update parameters:
 set ModuleDirRelative=applications
@@ -56,41 +52,7 @@ rem prepared in the bootstrapping stage:
 "%UpdateRepo%" %*
 
 
-
-rem Updating code:
-rem This code may be moved to a separate file in the future, in 
-rem which case the update code would 
-
-
-REM LEGACY code - to be deleted:
-REM set ScriptLibraryDir=%ScriptDir%\scripts\
-REM set UpdateModuleScript=%ScriptLibraryDir%UpdateModule.bat
-
-REM if 0 NEQ 0 (
-  REM rem Test output; this can also be excluded.
-  REM echo.
-  REM echo.
-  REM echo In %0: Updating module %ModuleDirRelative%
-  REM echo Calling: %UpdateModuleScript%
-  REM echo Script dir: %ScriptDir%
-  REM echo ...
-REM )
-REM if not exist %UpdateModuleScript% (
-  REM echo.
-  REM echo.
-  REM echo ERROR: The module updating script does not exist:
-  REM echo   %UpdateModuleScript%
-  REM echo The operation cannot be performed.
-  REM goto finalize
-  REM echo.
-  REM echo.
-REM )
-REM call %UpdateModuleScript% %*
-
-
 :finalize
-
-rem cd %InitialDir%
 
 
 endlocal
