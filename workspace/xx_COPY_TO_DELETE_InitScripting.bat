@@ -1,4 +1,6 @@
 
+REM TODO: Remove this script.
+
 @echo off
 
 set IGLibScripts=%~dp0\modules\IGLibScripts
