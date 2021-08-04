@@ -28,7 +28,7 @@ echo SETTINGS for bootstrapping IGLibScripts
 echo.
 
 rem Parameters for the update:
-set ModuleDirRelative=IGLibScripts
+set ModuleDirRelative=bootstrappingscripts\IGLibScripts
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.modules.IGLibScripts.git
 set RepositoryAddressSecondary=https://ajgorhoe@bitbucket.org/ajgorhoe/iglib.modules.iglibscripts.git

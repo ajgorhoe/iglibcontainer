@@ -4,7 +4,7 @@
 rem Sets parameters for cloning or updating the scripts/ directory.
 rem For more details, see comments in Settings_scripts.bat.
 
-call %~dp0\InitDirSettings.bat
+rem call %~dp0\InitDirSettings.bat
 
 set ModuleDirRelative=applications
 set CheckoutBranch=master
