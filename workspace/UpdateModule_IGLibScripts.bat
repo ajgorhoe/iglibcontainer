@@ -1,7 +1,15 @@
 
 @echo off
+
 rem This script updates a specific IGLib's module by cloning its Git 
 rem repository (if necessary), and updating it to the current state.
+rem
+rem REMARK
+rem Default location for IGLibScript repo is 
+rem     base/iglib/modules/IGLibScripts
+rem This update script is therefore not included in 
+rem   UpdateDirectoryModules_Workspace.bat
+
 
 rem Bootstrap scripting such that update scripts are available:
 set BootStrapScripting=%~dp0%BootStrapScripting.bat
