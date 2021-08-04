@@ -29,7 +29,7 @@ REM )
 call "%BootstrapSettings%"
 
 :: Derived variable - already defined in settings::
-:: set ModuleGitSubdir=%ModuleDir%\.git\refs
+set ModuleGitSubdir=%ModuleDir%\.git\refs
 
 REM :: Print settings for bootstrapping IGLib repo:
 REM call "%PrintRepoSettings%"

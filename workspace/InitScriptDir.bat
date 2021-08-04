@@ -22,7 +22,7 @@ goto finalize
 
 
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.modules.IGLibScripts.git
-set CheckoutDir=scripts
+set CheckoutDir=scripts11
 set CheckoutBranch=master
 
 set ScriptDir=%~dp0
