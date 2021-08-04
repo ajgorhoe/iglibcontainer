@@ -12,9 +12,10 @@ setlocal
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-set ScriptDir=%~dp0
-set InitialDir=%CD%
-set PrimaryInitializationScript=%ScriptDir%InitScriptDir.bat
+rem LEGACY code (to be removed when not needed any more):
+REM set ScriptDir=%~dp0
+REM set InitialDir=%CD%
+REM set PrimaryInitializationScript=%ScriptDir%InitScriptDir.bat
 
 echo.
 echo.
@@ -24,20 +25,21 @@ echo   %ScriptDir%
 echo.
 echo.
 
-if exist "%PrimaryInitializationScript%" (
- echo Calling primary initialization script:
- echo   call "%PrimaryInitializationScript%" %*
- call "%PrimaryInitializationScript%" %*
-) else (
-  echo WARNING: Primary initialization script does not exist:
-  echo   "%PrimaryInitializationScript%"
-  echo   The workspace/scripts/ module may not be initialized properly.
-)
+rem LEGACY code (to be removed when not needed any more):
+REM if exist "%PrimaryInitializationScript%" (
+ REM echo Calling primary initialization script:
+ REM echo   call "%PrimaryInitializationScript%" %*
+ REM call "%PrimaryInitializationScript%" %*
+REM ) else (
+  REM echo WARNING: Primary initialization script does not exist:
+  REM echo   "%PrimaryInitializationScript%"
+  REM echo   The workspace/scripts/ module may not be initialized properly.
+REM )
 
 
-call %ScriptDir%\base\UpdateDirectoryModules_Base.bat %1
-call %ScriptDir%\UpdateDirectoryModules_Workspace.bat %1
-call %ScriptDir%\..\workspaceprojects\UpdateDirectoryModules_WorkspaceProjects.bat %1
+call "%~dp0\base\UpdateDirectoryModules_Base.bat" "%~1"
+call "%~dp0\UpdateDirectoryModules_Workspace.bat" "%~1"
+call "%~dp0\..\workspaceprojects\UpdateDirectoryModules_WorkspaceProjects.bat" "%~1"
 
 :finalize
 
