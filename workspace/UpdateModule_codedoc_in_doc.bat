@@ -1,4 +1,6 @@
 
+REM This checks oud code documentation at old location, and the 
+REM branch that contains scripts adapted to that location.
 
 @echo off
 rem This script updates a specific IGLib's module by cloning its Git 
@@ -24,8 +26,8 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Repository update parameters:
-set ModuleDirRelative=codedoc_1
-set CheckoutBranch=master
+set ModuleDirRelative=doc\codedoc
+set CheckoutBranch=main/21_10_codedoc_located_in_doc
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.doc.codedoc.git
 set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.codedoc.git
 set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/doc/codedoc.git
