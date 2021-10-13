@@ -24,7 +24,7 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Repository update parameters:
-set ModuleDirRelative=codedoc_1
+set ModuleDirRelative=codedoc_1_stable
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.doc.codedoc.git
 set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.codedoc.git
