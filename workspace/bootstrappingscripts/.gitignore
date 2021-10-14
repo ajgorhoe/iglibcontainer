@@ -1,4 +1,9 @@
 
+# Remark: the line below may be deleted later, in case that the scripts
+# would also be contained in the containing direcory for more robustness
+# when working offline or when scripts repository might not be available.
+/IGLibScripts
+
 /IGLibScripts/.git
 /IGLibScripts/.git1
 /IGLibScripts/.git1*
