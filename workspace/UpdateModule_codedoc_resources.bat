@@ -1,4 +1,5 @@
 
+
 @echo off
 rem This script updates a specific IGLib's module by cloning its Git 
 rem repository (if necessary), and updating it to the current state.
@@ -23,13 +24,11 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Repository update parameters:
-set ModuleDirRelative=codedoc_new
+set ModuleDirRelative=codedoc_resources
 set CheckoutBranch=master
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
-rem https://github.com/ajgorhoe/IGLib.workspace.codedoc_new.git
+set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.codedoc_resources.git
 set RepositoryAddressSecondary=
-rem https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
-set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/codedoc_new
+set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/doc/codedoc_resources.git
 set Remote=origin
 set RemoteSecondary=
 set RemoteLocal=local
