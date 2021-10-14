@@ -1,66 +1,82 @@
 
 @echo off
 
-:: Prepares environment for execution of repository updating scripts.
+REM This script just passes execution to 
+REM bootstrappingscripts/BootStrapScripting.bat
+
+set RedirectScript=%~dp0\bootstrappingscripts\BootStrapScripting.bat
 
 echo.
-echo BootStrapScripting.bat:
-echo   bootstrapping essential scripts...
+echo %~n0%~x0: redirecting the call to:
+echo   %RedirectScript%
 echo.
-echo Obtaining bootstrapping script repository settins...
+call "%RedirectScript%"
 
-:: Define initially script locations for bootstrapping:
-set BootstrapSettings=%~dp0\SettingsIGLibScriptsBootstrap.bat
-set UpdateRepo=%~dp0\bootstrappingscripts\UpdateRepo.bat
-set SetVar=%~dp0\bootstrappingscripts\SetVar.bat
-set PrintRepoSettings=%~dp0\bootstrappingscripts\PrintRepoSettings.bat
 
-REM if 1 NEQ 0 (
+REM Legacy code, can be removed afer some time:
+
+
+
+REM :: Prepares environment for execution of repository updating scripts.
+
+REM echo.
+REM echo BootStrapScripting.bat:
+REM echo   bootstrapping essential scripts...
+REM echo.
+REM echo Obtaining bootstrapping script repository settins...
+
+REM :: Define initially script locations for bootstrapping:
+REM set BootstrapSettings=%~dp0\SettingsIGLibScriptsBootstrap.bat
+REM set UpdateRepo=%~dp0\bootstrappingscripts\UpdateRepo.bat
+REM set SetVar=%~dp0\bootstrappingscripts\SetVar.bat
+REM set PrintRepoSettings=%~dp0\bootstrappingscripts\PrintRepoSettings.bat
+
+REM REM if 1 NEQ 0 (
+  REM REM echo.
+  REM REM echo Initial script paths:
+  REM REM echo BootstrapSettings: "%BootstrapSettings%"
+  REM REM echo UpdateRepo: "%UpdateRepo%"
+  REM REM echo SetVar: "%SetVar%"
+  REM REM echo PrintRepoSettings: "%PrintRepoSettings%"
+REM REM )
+
+REM :: Obtain for IGLibScripting repository for bootstrapping:
+REM :: call "%~dp0\SettingsIGLibScriptsBootstrap.bat"
+REM call "%BootstrapSettings%"
+
+REM :: Derived variable - already defined in settings::
+REM set ModuleGitSubdir=%ModuleDir%\.git\refs
+
+REM REM :: Print settings for bootstrapping IGLib repo:
+REM REM call "%PrintRepoSettings%"
+
+REM set BootstrapRepoUpdated=0
+REM if exist "%ModuleGitSubdir%" goto :SkipUpdate
+  REM :: The IGLibScripts for bootstrapping not yet properly cloned, 
+  REM :: perform repo update (cloning):
+  REM call "%UpdateRepo%" "%BootstrapSettings%"
+  REM set BootstrapRepoUpdated=1
+REM :SkipUpdate
+
+
+REM if not exist "%ModuleGitSubdir%" goto ErrorScriptRepo
+  REM rem Update script locations to point intto IGLibScripts
+  REM rem by calling SetScriptReferences.bat in IGLibScripts:
+  REM call "%ModuleDir%\SetScriptReferences.bat"
+  REM rem call "%PrintScriptReferences%"
+  REM goto AfterScriptReferencesUpdate
+REM :ErrorScriptRepo
   REM echo.
-  REM echo Initial script paths:
-  REM echo BootstrapSettings: "%BootstrapSettings%"
-  REM echo UpdateRepo: "%UpdateRepo%"
-  REM echo SetVar: "%SetVar%"
-  REM echo PrintRepoSettings: "%PrintRepoSettings%"
-REM )
-
-:: Obtain for IGLibScripting repository for bootstrapping:
-:: call "%~dp0\SettingsIGLibScriptsBootstrap.bat"
-call "%BootstrapSettings%"
-
-:: Derived variable - already defined in settings::
-set ModuleGitSubdir=%ModuleDir%\.git\refs
-
-REM :: Print settings for bootstrapping IGLib repo:
-REM call "%PrintRepoSettings%"
-
-set BootstrapRepoUpdated=0
-if exist "%ModuleGitSubdir%" goto :SkipUpdate
-  :: The IGLibScripts for bootstrapping not yet properly cloned, 
-  :: perform repo update (cloning):
-  call "%UpdateRepo%" "%BootstrapSettings%"
-  set BootstrapRepoUpdated=1
-:SkipUpdate
-
-
-if not exist "%ModuleGitSubdir%" goto ErrorScriptRepo
-  rem Update script locations to point intto IGLibScripts
-  rem by calling SetScriptReferences.bat in IGLibScripts:
-  call "%ModuleDir%\SetScriptReferences.bat"
-  rem call "%PrintScriptReferences%"
-  goto AfterScriptReferencesUpdate
-:ErrorScriptRepo
-  echo.
-  echo ERROR in BOOTSTRAPPING scripts:
-  echo   IGLibScripts module could not be cloned.
-  echo   Fallback to bootstrapping scripts; may not work properly.
-  echo.
-:AfterScriptReferencesUpdate
+  REM echo ERROR in BOOTSTRAPPING scripts:
+  REM echo   IGLibScripts module could not be cloned.
+  REM echo   Fallback to bootstrapping scripts; may not work properly.
+  REM echo.
+REM :AfterScriptReferencesUpdate
 
 
 
-:finalize
+REM :finalize
 
-echo.
-echo   ... bootstrappping essential scripts completed.
-echo.
+REM echo.
+REM echo   ... bootstrappping essential scripts completed.
+REM echo.
