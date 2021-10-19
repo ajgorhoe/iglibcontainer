@@ -5,7 +5,7 @@ rem This script updates a specific IGLib's module by cloning its Git
 rem repository (if necessary), and updating it to the current state.
 
 rem Bootstrap scripting such that update scripts are available:
-set BootStrapScripting=%~dp0%BootStrapScripting.bat
+set BootStrapScripting=%~dp0\workspace\BootStrapScripting.bat
 echo.
 echo SCRIPT: BootStrapScripting: "%BootStrapScripting%"
 echo.
@@ -24,7 +24,7 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Repository update parameters:
-set ModuleDirRelative=workspaceprojects_all
+set ModuleDirRelative=workspaceprojects_all_WS
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspaceprojects_all.git
 set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspaceprojects_all.git
