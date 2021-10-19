@@ -24,7 +24,7 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Repository update parameters:
-set ModuleDirRelative=workspaceprojects_container_WS
+set ModuleDirRelative=workspaceprojects
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspaceprojects_container.git
 set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspaceprojects_container.git
