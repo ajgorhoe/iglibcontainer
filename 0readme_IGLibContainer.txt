@@ -40,7 +40,7 @@ own repositories are updated only via update scripts, similarly as with the
 previous repo. In order to clone / update workspaceprojects/ with the older
 projecs included, and also update the contained newer projects via the
 contained scripts, call the following script:
-  * UpdateWorkspaceprojectsDirectory_all_witharchivedprojects.bat
+  * UpdateWorkspaceprojectsDirectory_All_WithArchivedProjectsIncluded.bat
 To do the same but without also updating the project directories that have 
 their own repositories, call the following script instead:
   * UpdateModule_workspaceprojects_all.bat
