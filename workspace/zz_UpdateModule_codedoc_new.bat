@@ -1,4 +1,12 @@
 
+rem REMARK: 
+rem This was used for development od new scripts, and it is not used any more.
+rem Repository is only on GitLab and local, but NOT on GitHub.
+rem Code generation in this repo may not work.
+rem Repository and this script are kept just in case that we one would like
+rem to look for something.
+
+
 @echo off
 rem This script updates a specific IGLib's module by cloning its Git 
 rem repository (if necessary), and updating it to the current state.
@@ -26,9 +34,7 @@ rem Repository update parameters:
 set ModuleDirRelative=codedoc_new
 set CheckoutBranch=master
 set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
-rem https://github.com/ajgorhoe/IGLib.workspace.codedoc_new.git
 set RepositoryAddressSecondary=
-rem https://gitlab.com/ajgorhoe/iglib.workspace.codedoc_develop.git
 set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/codedoc_new
 set Remote=origin
 set RemoteSecondary=
