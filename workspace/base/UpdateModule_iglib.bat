@@ -52,7 +52,7 @@ rem prepared in the bootstrapping stage:
 "%UpdateRepo%" %*
 
 
-if 0 NEQ 0 (
+if 1 NEQ 0 (
   rem After restoring / updating the IGLib repository, we also need to
   rem restore / update its modulles and submodules. This is done by the 
   rem script tat is also used to update depenndencies when building, which
