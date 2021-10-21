@@ -47,9 +47,14 @@ if not exist "%UpdateRepo%" (
   goto finalize
 )
 
+
+echo #####################$$$$$$$$$$$$$$$$$$$$$$$$$
+
 rem Finally, perform repository clone / update by using the scripts
 rem prepared in the bootstrapping stage:
 "%UpdateRepo%" %*
+
+echo #####################%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 if 1 NEQ 0 (
@@ -57,7 +62,18 @@ if 1 NEQ 0 (
   rem restore / update its modulles and submodules. This is done by the 
   rem script tat is also used to update depenndencies when building, which
   rem is part of the auxiliary project with this task, the InitIGLibModules:
+  echo.
+  echo **************************************************************
+  echo **************************************************************
+  echo.
+  echo Updating internal and external dependency modules of IGLib...
+  echo Execuding:
+  echo   call "%~dp0\iglib\00_initmoodules\InitIGLibModules\scripts\UpdateIGLibModuleRepos.bat"
+  
   call "%~dp0\iglib\00_initmoodules\InitIGLibModules\scripts\UpdateIGLibModuleRepos.bat"
+  echo.
+  echo  ... updating IGLib dependencies done.
+  echo.
 )
 
 
