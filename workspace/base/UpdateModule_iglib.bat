@@ -48,6 +48,7 @@ if not exist "%UpdateRepo%" (
 )
 
 
+
 echo #####################$$$$$$$$$$$$$$$$$$$$$$$$$
 
 rem Finally, perform repository clone / update by using the scripts
@@ -59,22 +60,24 @@ echo #####################%%%%%%%%%%%%%%%%%%%%%%%%
 
 if 1 NEQ 0 (
   rem After restoring / updating the IGLib repository, we also need to
-  rem restore / update its modulles and submodules. This is done by the 
-  rem script tat is also used to update depenndencies when building, which
-  rem is part of the auxiliary project with this task, the InitIGLibModules:
+  rem restore / update its modulles and submodules. This is done by 
+  rem calling the appropriate script in IGLib repo:
   echo.
   echo **************************************************************
   echo **************************************************************
   echo.
   echo Updating internal and external dependency modules of IGLib...
   echo Execuding:
-  echo   call "%~dp0\iglib\00_initmoodules\InitIGLibModules\scripts\UpdateIGLibModuleRepos.bat"
-  
-  call "%~dp0\iglib\00_initmoodules\InitIGLibModules\scripts\UpdateIGLibModuleRepos.bat"
+  echo   call "%~dp0\iglib\UpdateGLibDependencies.bat"
+  call call "%~dp0\iglib\UpdateGLibDependencies.bat"
   echo.
   echo  ... updating IGLib dependencies done.
   echo.
+  echo **************************************
+  echo **************************************
+  echo.
 )
+
 
 
 
