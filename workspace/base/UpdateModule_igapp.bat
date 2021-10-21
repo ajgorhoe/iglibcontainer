@@ -49,7 +49,11 @@ if not exist "%UpdateRepo%" (
 
 rem Finally, perform repository clone / update by using the scripts
 rem prepared in the bootstrapping stage:
-"%UpdateRepo%" %*
+echo.
+echo Executing: 
+echo   call "%UpdateRepo%" %*
+echo.
+call "%UpdateRepo%" %*
 
 
 :finalize
