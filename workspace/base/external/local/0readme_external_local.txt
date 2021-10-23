@@ -16,11 +16,16 @@ f7160203e2c400020046c97f61a01f470edcb4ce
 https://github.com/ajgorhoe/ZedGraph.git
 
 aforge.net
+https://github.com/ajgorhoe/AForge.NET.git
+??
+https://github.com/ajgorhoe/AForge.NET.git
 
+ActiViz.NET
+https://github.com/dearman/activizdotnet.git
+??
+https://github.com/ajgorhoe/activizdotnet.git
 
-ActiViz
-
-
+accord.net
 
 
 
