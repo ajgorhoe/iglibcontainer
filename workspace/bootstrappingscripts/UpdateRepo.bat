@@ -5,8 +5,8 @@
 :: Usually used for reposiories that are embedded as full independent 
 :: repositories rather than via submodules or some other Git mechanism.
 
-:: Callinng this script has NO SIDE EFFECTS (the body is enclosed in setlocal
-:: / endlocal block).
+:: Callinng this script has NO SIDE EFFECTS (the body is enclosed in
+:: setlocal / endlocal block).
 
 :: PARAMETERS of update are obtained via environment variables:
 ::   ModuleDir: root directory of cloned Repository
@@ -24,7 +24,7 @@
 
 :: One way to call the script is to set all environment variables
 :: that define parameters of the update (see above), then call this
-:: script to perform the update. AA better wat is to create a settings
+:: script to perform the update. A better way is to create a settings
 :: script that sets all the required parameters, and call this script
 :: via embedded calll mechanism simply by stating script path as parameter
 :: when calling the script (the advantage is that scripts have no sde
@@ -285,6 +285,16 @@ echo Pulling changes from %Remote%...
 git pull %Remote%
 
 
+echo.
+echo **************************** Before trying git checkout...
+echo.
+:: Switch to checkout branch  (in case not yet checked out):
+echo Try to checkout "%CheckoutBranch%"...
+git checkout "%CheckoutBranch%"
+echo.
+echo ******************* after git checkout.
+echo.
+
 :finalize
 
 echo.
@@ -299,5 +309,10 @@ echo.
 cd %InitialDirUpdateRepo%
 ver > nul
 
+echo.
+echo Calling endlocal before completing the script...
+
 endlocal
+
+echo   ... done, script completed.
 
