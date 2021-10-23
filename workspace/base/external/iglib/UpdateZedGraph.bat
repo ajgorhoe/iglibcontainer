@@ -10,12 +10,17 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Call bootstrapping script to define basic directories and strings:
-call "%~dp0\..\BootStrapScripting.bat"
+call "%~dp0\..\bootstrappingscripts\BootStrapScripting.bat"
 
 echo.
-echo Updating external modules...
+echo Updating external module %ModuleDirRelative% ...
 echo.
-echo    Updating module ZedGraph ...
+echo Settings:
+call "%PrintRepoSettings%"
+echo.
+echo @@@@@@@@@@@@@@@@@@@@@
+echo Calling:
+echo   "%UpdateRepo%" "%~dp0\SettingsZedGraph.bat"
 call "%UpdateRepo%" "%~dp0\SettingsZedGraph.bat"
 echo.
 echo   ... Updating external modules completeed.

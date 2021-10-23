@@ -23,18 +23,14 @@ rem see also documentation comments in UpdateRepo.bat.
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-echo.
-echo SETTINGS for updating repository: Math
-echo.
-
 rem Parameters for the update:
-set ModuleDirRelative=..\..\..\external\ZedGraph
+set ModuleDirRelative=ZedGraph
 set CheckoutBranch=f7160203e2c400020046c97f61a01f470edcb4ce
-set RepositoryAddress=https://github.com/ZedGraph/ZedGraph.git
-set RepositoryAddressSecondary=
+set RepositoryAddress=https://github.com/ajgorhoe/ZedGraph.git
+set RepositoryAddressSecondary=https://github.com/ZedGraph/ZedGraph.git
 set RepositoryAddressLocal=
 set Remote=origin
-set RemoteSecondary=
+set RemoteSecondary=upstream
 set RemoteLocal=
 
 set ModuleDir=%~dp0%ModuleDirRelative%
@@ -57,3 +53,7 @@ if "%~1" EQU "" goto AfterCommandCall
 	call %CommandLine6945%
 :AfterCommandCall
 
+
+echo.
+echo SETTINGS defined for updating %ModuleDirRelative% ...
+echo.
