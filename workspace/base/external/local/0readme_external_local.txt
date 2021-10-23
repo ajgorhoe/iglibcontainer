@@ -25,9 +25,10 @@ https://github.com/dearman/activizdotnet.git
 ??
 https://github.com/ajgorhoe/activizdotnet.git
 
-accord.net
-
-
+Accord.NET
+https://github.com/accord-net/framework.git
+?? - last (archived)?
+https://github.com/ajgorhoe/framework.git
 
 
 Remark:
