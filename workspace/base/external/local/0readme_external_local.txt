@@ -8,14 +8,20 @@ Repositories included or worked on:
 mathnet-numerics
 https://github.com/mathnet/mathnet-numerics.git
 8cdd91d37f36cb4daecc7838898a08ef9c3aa1a4
+https://github.com/ajgorhoe/mathnet-numerics.git
 
 ZedGraph
 https://github.com/ZedGraph/ZedGraph.git
 f7160203e2c400020046c97f61a01f470edcb4ce
+https://github.com/ajgorhoe/ZedGraph.git
 
 aforge.net
 
+
 ActiViz
+
+
+
 
 
 
