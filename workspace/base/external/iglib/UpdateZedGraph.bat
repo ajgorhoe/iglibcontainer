@@ -9,7 +9,7 @@ setlocal
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
-rem Call bootstrapping script to define basic directories and strings:
+rem Call bootstrapping script to define basic directories and scripts:
 call "%~dp0\..\bootstrappingscripts\BootStrapScripting.bat"
 
 echo.
@@ -18,9 +18,9 @@ echo.
 echo Settings:
 call "%PrintRepoSettings%"
 echo.
-echo @@@@@@@@@@@@@@@@@@@@@
-echo Calling:
-echo   "%UpdateRepo%" "%~dp0\SettingsZedGraph.bat"
+rem echo @@@@@@@@@@@@@@@@@@@@@
+rem echo Calling:
+rem echo   "%UpdateRepo%" "%~dp0\SettingsZedGraph.bat"
 call "%UpdateRepo%" "%~dp0\SettingsZedGraph.bat"
 echo.
 echo   ... Updating external modules completeed.
