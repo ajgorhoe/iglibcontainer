@@ -23,12 +23,21 @@ setlocal
 rem Reset the error level (by running an always successfull command):
 ver > nul
 
+rem Addition to common update scripts - attempt to add appropriate remotes:
+set InitialDir=%CD%
+cd "%~dp0"
+git remote add origin https://github.com/ajgorhoe/iglibcontainer.git
+git remote add zz_origin_gitlab https://gitlab.com/ajgorhoe/iglibcontainer.git
+git remote add local d:\backup_sync\bk_code\git\ig\IGLibContainer
+cd "%InitialDir%"
+ver > nul
+
 rem Repository update parameters:
 set ModuleDirRelative=.\
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/iglibcontainer.git
 set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglibcontainer.git
-set RepositoryAddressLocal=d:\backup_sync\bk_code\git\ig\IGLibContainer\
+set RepositoryAddressLocal=d:\backup_sync\bk_code\git\ig\IGLibContainer
 set Remote=origin
 set RemoteSecondary=zz_origin_gitlab
 set RemoteLocal=local
