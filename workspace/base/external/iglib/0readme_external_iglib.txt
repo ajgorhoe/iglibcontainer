@@ -6,6 +6,19 @@ directly from external repositories.
 This directory contains external libraries referenced by IGLib as source code.
 The libraries are synchronized directly from  repositories.
 
+In forked repositories for maintianing IGLib dependencies properly, branches
+and tags are defined to denote commits that are referenced by specific 
+versions of IGLib. The following example shows example of such a branch and 
+a tag with corresponding descriptions for Math.NET Numerics:
+Tag in Math.NET Numerics:
+IGLib/Tag_21_10_24_IGLib_1.9.1
+This tag marks the library as referenced by IGLib 1.9.1. It points to commit 8cdd91d37f36cb4daecc7838898a08ef9c3aa1a4.
+Corresponding branch:
+IGLib/21_10_24_IGLib_1.9.1
+This branch contains the library as referenced by IGLib 1.9.1. A tag with a similar name is also created. Beginning of this branch points to commit 8cdd91d37f36cb4daecc7838898a08ef9c3aa1a4.
+* Remark: tag would in principle be sufficient, but branch also enables making
+small modifications over time.
+
 
 Repositories included or worked on:
 
