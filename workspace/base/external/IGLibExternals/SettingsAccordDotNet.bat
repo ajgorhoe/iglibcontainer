@@ -28,10 +28,10 @@ set ModuleDirRelative=accord.net
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/framework.git
 set RepositoryAddressSecondary=https://github.com/accord-net/framework.git
-set RepositoryAddressLocal=
+set RepositoryAddressLocal=d:\git_external\accord.net.git
 set Remote=origin
 set RemoteSecondary=upstream
-set RemoteLocal=
+set RemoteLocal=local
 
 set ModuleDir=%~dp0%ModuleDirRelative%
 

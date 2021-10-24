@@ -28,10 +28,10 @@ set ModuleDirRelative=ZedGraph
 set CheckoutBranch=f7160203e2c400020046c97f61a01f470edcb4ce
 set RepositoryAddress=https://github.com/ajgorhoe/ZedGraph.git
 set RepositoryAddressSecondary=https://github.com/ZedGraph/ZedGraph.git
-set RepositoryAddressLocal=
+set RepositoryAddressLocal=d:\git_external\ZedGraph.git
 set Remote=origin
 set RemoteSecondary=upstream
-set RemoteLocal=
+set RemoteLocal=local
 
 set ModuleDir=%~dp0%ModuleDirRelative%
 

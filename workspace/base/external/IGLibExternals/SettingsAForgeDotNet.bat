@@ -28,10 +28,10 @@ set ModuleDirRelative=aforge.net
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/AForge.NET.git
 set RepositoryAddressSecondary=https://github.com/andrewkirillov/AForge.NET.git
-set RepositoryAddressLocal=
+set RepositoryAddressLocal=d:\git_external\aforge.net.git
 set Remote=origin
 set RemoteSecondary=upstream
-set RemoteLocal=
+set RemoteLocal=local
 
 set ModuleDir=%~dp0%ModuleDirRelative%
 

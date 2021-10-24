@@ -28,10 +28,10 @@ set ModuleDirRelative=mathnet-numerics
 set CheckoutBranch=8cdd91d37f36cb4daecc7838898a08ef9c3aa1a4
 set RepositoryAddress=https://github.com/ajgorhoe/mathnet-numerics.git
 set RepositoryAddressSecondary=https://github.com/mathnet/mathnet-numerics.git
-set RepositoryAddressLocal=
+set RepositoryAddressLocal=d:\git_external\mathnet-numerics.git
 set Remote=origin
 set RemoteSecondary=upstream
-set RemoteLocal=
+set RemoteLocal=local
 
 set ModuleDir=%~dp0%ModuleDirRelative%
 
