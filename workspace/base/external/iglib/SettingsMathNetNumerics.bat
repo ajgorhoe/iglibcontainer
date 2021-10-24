@@ -24,10 +24,10 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Parameters for the update:
-set ModuleDirRelative=ZedGraph
-set CheckoutBranch=f7160203e2c400020046c97f61a01f470edcb4ce
-set RepositoryAddress=https://github.com/ajgorhoe/ZedGraph.git
-set RepositoryAddressSecondary=https://github.com/ZedGraph/ZedGraph.git
+set ModuleDirRelative=mathnet-numerics
+set CheckoutBranch=8cdd91d37f36cb4daecc7838898a08ef9c3aa1a4
+set RepositoryAddress=https://github.com/ajgorhoe/mathnet-numerics.git
+set RepositoryAddressSecondary=https://github.com/mathnet/mathnet-numerics.git
 set RepositoryAddressLocal=
 set Remote=origin
 set RemoteSecondary=upstream
