@@ -1,7 +1,7 @@
 
 @echo off
 
-rem Updates all IGLib modules.
+rem Updates all IGLib dependencies.
 
 setlocal
 
@@ -11,17 +11,33 @@ ver > nul
 REM rem Call bootstrapping script to define basic directories and scripts:
 REM call "%~dp0\BootStrapScripting.bat"
 
+
+
+
+rem ======================== Basic dependencies updates:
+
+call "%~dp0\UpdateIGLibDependencies.bat"
+
+rem ======================== Extended updates follow:
+
 echo.
-echo Updating external modules...
+echo ---------------------------------------------------------------
+echo Updating module ...
 echo.
-echo    Updating module ZedGraph ...
-rem call "%UpdateRepo%" "%~dp0\SettingsZedGraph.bat"
-call "%~dp0\UpdateZedGraph.bat"
-echo    Updating module MathNetNumerics ...
-rem call "%UpdateRepo%" "%~dp0\SettingsExternalMathNetNumerics.bat"
-call "%~dp0\UpdateMathNetNumerics.bat"
+echo    Updating module ActiVizDotNet ...
+rem call "%UpdateRepo%" "%~dp0\SettingsActiVizDotNet.bat"
+call "%~dp0\UpdateActiVizDotNet.bat"
 echo.
-echo   ... Updating external modules completeed.
+
+echo.
+echo ---------------------------------------------------------------
+echo    Updating module AForgeDotNet ...
+rem call "%UpdateRepo%" "%~dp0\SettingsExternalAForgeDotNet.bat"
+call "%~dp0\UpdateAForgeDotNet.bat"
+echo.
+
+echo.
+echo   ... Updating extended IGLib dependencies completeed.
 echo.
 
 endlocal
