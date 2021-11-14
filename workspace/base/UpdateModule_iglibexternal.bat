@@ -23,13 +23,13 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Repository update parameters:
-set ModuleDirRelative=iglib
+set ModuleDirRelative=iglibexternal
 set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.iglibexternal.git
-set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.base.iglibexternal.git
+set RepositoryAddressSecondary=https://ajgorhoe@bitbucket.org/ajgorhoe/iglib.workspace.base.iglibexternal.git
 set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/base/iglibexternal.git
 set Remote=origin
-set RemoteSecondary=zz_origin_gitlab
+set RemoteSecondary=zz_origin_bitbuchet
 set RemoteLocal=local
 
 rem Derived parameters:
