@@ -24,7 +24,7 @@ ver > nul
 
 rem Repository update parameters:
 set ModuleDirRelative=unittests
-set CheckoutBranch=master
+set CheckoutBranch=release/IGLib1.9.9_21_11_18_MainApplicationsWork
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.unittests.git
 set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.base.unittests.git
 set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/base/unittests.git

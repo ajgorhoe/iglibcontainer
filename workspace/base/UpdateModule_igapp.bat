@@ -24,7 +24,7 @@ ver > nul
 
 rem Repository update parameters:
 set ModuleDirRelative=igapp
-set CheckoutBranch=master
+set CheckoutBranch=release/IGLib1.9.9_21_11_18_MainApplicationsWork
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.igapp.git
 set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.base.igapp.git
 set RepositoryAddressLocal=d:\backup_sync\bk_code\git\ig\workspace\base\igapp.git
