@@ -3,7 +3,8 @@
 This is an auxiliary container repository for the Investigativw Generic Library and related software, used to checkout and update source code, examples, and test data for IGLib.
 
 The original repository for this container is located at
-  ttps://github.com/ajgorhoe/iglibcontainer.git
+
+> *htps://github.com/ajgorhoe/iglibcontainer.git*
 
 ## 1. How to use on MS Windows:
 
@@ -11,11 +12,11 @@ After cloning this repository on a local Windows machine, just run one of the ba
 
 In the root directory of the cloned repository, tun the following script:
 
-  PrepareIglLib.bat
+> *PrepareIglLib.bat*
 
 After the script finishes, you will find basic IGLib libraries in:
 
-  workspace/base/iglib
+> *workspace/base/iglib*
 
 
 ## 2. Other:
