@@ -9,7 +9,13 @@ The original repository for this container is located at
 
 After cloning this repository on a local Windows machine, just run one of the batch scripts in order to check out and update all other repositories necessary to view, build and run the code.
 
-In 
+In the root directory of the cloned repository, tun the following script:
+
+  PrepareIglLib.bat
+
+After the script finishes, you will find basic IGLib libraries in:
+
+  workspace/base/iglib
 
 
 ## 2. Other:
