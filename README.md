@@ -4,7 +4,7 @@ This is an auxiliary container repository for the Investigative Generic Library 
 
 The original repository for this container is located at
 
-> *htps://github.com/ajgorhoe/iglibcontainer.git*
+> *https://github.com/ajgorhoe/iglibcontainer.git*
 
 ## 1. How to use on MS Windows:
 
