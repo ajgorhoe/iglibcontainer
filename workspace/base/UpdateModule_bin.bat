@@ -25,12 +25,11 @@ ver > nul
 rem Repository update parameters:
 set ModuleDirRelative=bin
 set CheckoutBranch=master
-set RepositoryAddress=https://gitlab.com/ajgorhoe/iglib.workspace.bin.git
-set RepositoryAddressSecondary=
+set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.bin.git
+set RepositoryAddressSecondary=https://gitlab.com/ajgorhoe/iglib.workspace.bin.git
 set RepositoryAddressLocal=d:\backup_sync\bk_code\git\ig\workspace\base\bin.git\
 set Remote=origin
-set RemoteSecondary=
-rem set RemoteSecondary=zz_origin_gitlab
+set RemoteSecondary=zz_origin_gitlab
 set RemoteLocal=local
 
 rem Derived parameters:
