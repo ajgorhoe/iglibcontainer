@@ -29,7 +29,7 @@ set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.iglibexte
 set RepositoryAddressSecondary=https://ajgorhoe@bitbucket.org/ajgorhoe/iglib.workspace.base.iglibexternal.git
 set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/base/iglibexternal.git
 set Remote=origin
-set RemoteSecondary=zz_origin_bitbuchet
+set RemoteSecondary=zz_origin_bitbucket
 set RemoteLocal=local
 
 rem Derived parameters:
