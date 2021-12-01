@@ -23,7 +23,6 @@ call "%~dp0\UpdateDirectoryModules_Workspace.bat"
 rem Finally, update the additional modules that are not updated by 
 rem the script called before:
 call "%~dp0\UpdateModule_IGLibScripts.bat" "" "" %*
-call "%~dp0\UpdateModule_bin.bat" "" "" %*
 call "%~dp0\UpdateModule_develop_cobik.bat" "" "" %*
 
 :finalize
