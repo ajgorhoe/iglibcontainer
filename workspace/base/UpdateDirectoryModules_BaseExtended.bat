@@ -19,6 +19,9 @@ call "%~dp0\UpdateDirectoryModules_Base.bat"
 
 rem Finally, update the additional modules that are not updated by 
 rem the script called before:
+
+call "%~dp0\UpdateModule_bin.bat" "" "" %*
+
 call "%~dp0\UpdateModule_igapp.bat" "" "" %*
 
 :finalize

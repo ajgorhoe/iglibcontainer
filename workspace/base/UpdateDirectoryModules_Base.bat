@@ -34,16 +34,18 @@ rem
 rem Passing parameters in the way they are passed is kept in order to
 rem support legacy update scripts (although in this directory, all
 rem scripts have already been updated to the new modus operandi).
-call "%~dp0\UpdateModule_data.bat" "" "" %*
 call "%~dp0\UpdateModule_iglib.bat" "" "" %*
 call "%~dp0\UpdateModule_iglibapp.bat" "" "" %*
-call "%~dp0\UpdateModule_iglibexternal.bat" "" "" %*
-call "%~dp0\UpdateModule_iglearn.bat" "" "" %*
-call "%~dp0\UpdateModule_igsandbox.bat" "" "" %*
 call "%~dp0\UpdateModule_igsolutions.bat" "" "" %*
+call "%~dp0\UpdateModule_unittests.bat" "" "" %*
+call "%~dp0\UpdateModule_iglibexternal.bat" "" "" %*
+
 call "%~dp0\UpdateModule_igtest.bat" "" "" %*
 call "%~dp0\UpdateModule_shelldev.bat" "" "" %*
-call "%~dp0\UpdateModule_unittests.bat" "" "" %*
+
+call "%~dp0\UpdateModule_igsandbox.bat" "" "" %*
+call "%~dp0\UpdateModule_iglearn.bat" "" "" %*
+call "%~dp0\UpdateModule_data.bat" "" "" %*
 
 
 :finalize
