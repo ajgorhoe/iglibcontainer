@@ -1,4 +1,9 @@
 
+WARNING: This directory is OBSOLETE!
+         Use scripts in ../bootstrappingscripts instead!
+		 Directory will be kept until all dependencies are updated to new 
+		 way. For good examples, see ../base/iglibexternal/IGLibExternal/
+
 Various auxiliary scripts used by IGLib.
 
 WARNING: Do not include this directory as submodule!
