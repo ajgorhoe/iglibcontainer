@@ -12,7 +12,7 @@ rem Check out / update basic IGLib modules...
 call "%~dp0\workspace\base\UpdateDirectoryModules_Base.bat" %*
 
 rem Check out / update internal modules and external dependencies...
-call "%~dp0\workspace\base\iglib\\00_initmoodules\UpdateIGLibModuleRepos.bat" %*
+call "%~dp0\workspace\base\iglib\\00_initmodules\UpdateIGLibModuleRepos.bat" %*
 
 rem Check out code documentation directory with scripts etc.:
 call "%~dp0\workspace\UpdateModule_codedoc.bat" %*
