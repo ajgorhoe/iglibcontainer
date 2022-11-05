@@ -61,26 +61,28 @@ call "%UpdateRepo%" %*
 
 echo #####################%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-if 1 NEQ 0 (
-  rem After restoring / updating the IGLib repository, we also need to
-  rem restore / update its modulles and submodules. This is done by 
-  rem calling the appropriate script in IGLib repo:
-  echo.
-  echo **************************************************************
-  echo **************************************************************
-  echo.
-  echo Updating internal and external dependency modules of IGLib...
-  echo Execuding:
-  echo   call "%~dp0\iglib\UpdateGLibDependencies.bat"
-  call call "%~dp0\iglib\UpdateGLibDependencies.bat"
-  echo.
-  echo  ... updating IGLib dependencies done.
-  echo.
-  echo **************************************
-  echo **************************************
-  echo.
-)
+rem WARNING:
+rem Block below had to be commented out. Otherwise, we would get into an
+rem infinite loop when the script is called from the iglib/ init scripts.
+REM if 1 NEQ 0 (
+  REM rem After restoring / updating the IGLib repository, we also need to
+  REM rem restore / update its modules and submodules. This is done by 
+  REM rem calling the appropriate script in IGLib repo:
+  REM echo.
+  REM echo **************************************************************
+  REM echo **************************************************************
+  REM echo.
+  REM echo Updating internal and external dependency modules of IGLib...
+  REM echo Execuding:
+  REM echo   call "%~dp0\iglib\UpdateGLibDependencies.bat"
+  REM call call "%~dp0\iglib\UpdateGLibDependencies.bat"
+  REM echo.
+  REM echo  ... updating IGLib dependencies done.
+  REM echo.
+  REM echo **************************************
+  REM echo **************************************
+  REM echo.
+REM )
 
 
 
