@@ -90,5 +90,9 @@ $$\begin{array}{c}
   * [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
   * [Extended syntax](https://www.markdownguide.org/extended-syntax/) (not supported by all markdown viewers and editors)
 * *Extensions - Mathematical Formulas:*
-  * [Mathpix Markdown](https://marketplace.visualstudio.com/items?itemName=mathpix.vscode-mathpix-markdown)
-  * [Mathematics in R Markdown](https://rpruim.github.io/s341/S19/from-class/MathinRmd.html)
+  * [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics) - a wikibook containing exhaustive reference for writing mathematical formulas in LaTeX. LaTeX syntax is usually used in markdown extensions that allow rendering of mathematical formulas.
+    * [LaTeX/Advanced Mathematics](https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics) - upgrade of the previous ducument
+  * [Markdown extensions by bookdown](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html)
+  * [Mathpix Markdown](https://marketplace.visualstudio.com/items?itemName=mathpix.vscode-mathpix-markdown) - a Visual Studio Code plugin
+    * [Mathpix - Syntax reference](https://mathpix.com/docs/mathpix-markdown/syntax-reference)
+  * [Mathematics in R Markdown](https://rpruim.github.io/s341/S19/from-class/MathinRmd.html) (R Markdown is another markdown extension that includes LaTeX-style mathematical formulas)
