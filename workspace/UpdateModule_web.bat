@@ -29,7 +29,7 @@ set CheckoutBranch=main
 set RepositoryAddress=https://github.com/ajgorhoe/web.git
 set RepositoryAddressSecondary=
 rem https://gitlab.com/ajgorhoe/web.git
-set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/web.git
+set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/documentation/web.git
 set Remote=origin
 set RemoteSecondary=zz_origin_gitlab
 set RemoteLocal=local
