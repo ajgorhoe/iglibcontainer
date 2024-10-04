@@ -25,8 +25,11 @@ ver > nul
 rem Repository update parameters:
 set ModuleDirRelative=anka_html_basics
 set CheckoutBranch=master
-set RepositoryAddress=https://gitlab.com/AnkitaSL/vaje.anka_html_basics.git
-set RepositoryAddressSecondary=
+set RepositoryAddress=https://github.com/AnkitaMega/anka_html_basics.git
+
+set RepositoryAddressSecondary=https://gitlab.com/AnkitaSL/vaje.anka_html_basics.git
+rem Other forks and clones:
+rem 
 set RepositoryAddressLocal=d:\backup_sync\bk_code\git\anka\anka_html_basics.git
 set Remote=origin
 set RemoteSecondary=zz_origin_gitlab
