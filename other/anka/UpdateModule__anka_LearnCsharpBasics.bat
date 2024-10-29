@@ -25,7 +25,8 @@ ver > nul
 rem Repository update parameters:
 set ModuleDirRelative=anka_LearnCsharpBasics
 set CheckoutBranch=main
-set RepositoryAddress=https://github.com/AnkitaMega/LearnCsharpBasics.git
+set RepositoryAddress=https://github.com/ajgorhoe/LearnCsharpBasics.git
+rem   https://github.com/AnkitaMega/LearnCsharpBasics.git
 set RepositoryAddressSecondary=https://FGreso@bitbucket.org/FGreso/learncsharpbasics.git
 set RepositoryAddressLocal=d:\backup_sync\bk_code\git\anka\LearnCsharpBasics.git
 set Remote=origin
