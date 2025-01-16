@@ -5,6 +5,11 @@
 /web1
 /web11
 
+# iglibmodules: container repository for buillding new IGLib modules.
+/iglibmodules
+/iglibmodules1
+/iglibmodules11
+
 # base/iglearn repository:
 # Warning: many update scripts will probably not work correctly.
 /iglearn
