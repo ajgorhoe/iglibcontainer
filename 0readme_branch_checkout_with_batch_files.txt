@@ -1,4 +1,8 @@
 
+OLD INFORMATION
+
+This information is not entirely valid any more. Refer to README.md instead.
+
 The current branch is intended for checking out IGLib submodules by batch 
 scripts (which must be run explicitly) instead of using submodules.
 
