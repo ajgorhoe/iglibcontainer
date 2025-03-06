@@ -25,7 +25,7 @@ ver > nul
 setlocal
   
   set ModuleDirRelative=IGLibScripts
-  set CheckoutBranch=master
+  set CheckoutBranch=main
   set RepositoryAddress=https://github.com/ajgorhoe/IGLib.modules.IGLibScripts.git
   set RepositoryAddressSecondary=https://ajgorhoe@bitbucket.org/ajgorhoe/iglib.modules.iglibscripts.git
   set RepositoryAddressLocal=d:\backup_sync\bk_code\git\ig\misc\iglib_modules\IGLibScripts
