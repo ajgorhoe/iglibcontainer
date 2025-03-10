@@ -24,18 +24,18 @@ Write-Host "Updating/cloning a specific repository..."
 # Custom section (USER DEFINED):
 
 # Path to UpdateOrCloneRepository.ps1
-$UpdatingScriptPath = "./workspace/UpdateOrCloneRepository.ps1"
+$UpdatingScriptPath = "../workspace/UpdateOrCloneRepository.ps1"
 
 # Define parameter variables for UpdateOrCloneRepository.ps1
 #    in the same order as that script's parameters:
 
-$global:CurrentRepo_Directory = "workspaceprojects_all"
+$global:CurrentRepo_Directory = "learn_sluzba/"
 $global:CurrentRepo_Ref = "master"
-$global:CurrentRepo_Address = "https://github.com/ajgorhoe/IGLib.workspaceprojects_all.git"
+$global:CurrentRepo_Address = "https://github.com/ajgorhoe/IGLib.workspace.base.iglearn_sluzba.git"
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = "https://gitlab.com/ajgorhoe/iglib.workspaceprojects_all.git"
-$global:CurrentRepo_RemoteSecondary = "remoteGitLab"
-$global:CurrentRepo_AddressTertiary = "d:\backup_sync\bk_code\git\ig\workspaceprojects_all.git"
+$global:CurrentRepo_AddressSecondary = $null
+$global:CurrentRepo_RemoteSecondary = $null
+$global:CurrentRepo_AddressTertiary = "d:\backup_sync\bk_code\git\ig\workspace\base\iglearn_sluzba.git"
 $global:CurrentRepo_RemoteTertiary = "local"
 $global:CurrentRepo_ThrowOnErrors = $false
 

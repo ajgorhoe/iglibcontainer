@@ -16,8 +16,9 @@
 
 .NOTES
     Copyright © Igor Grešovnik.
-    Part of IGLib.
-    https://github.com/ajgorhoe/IGLib.modules.IGLibScripts
+    Part of IGLib: https://github.com/ajgorhoe/IGLib.modules.IGLibScripts
+	License:
+	https://github.com/ajgorhoe/IGLib.modules.IGLibScripts/blob/main/LICENSE.md
 	
 
 .EXAMPLE
