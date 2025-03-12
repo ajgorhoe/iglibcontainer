@@ -18,7 +18,8 @@
 #>
 
 Write-Host "`n`n======================================================="
-Write-Host "Updating/cloning a specific repository..."
+Write-Host "Updating/cloning other/iglibmosules_ALL/ container"
+Write-Host "  and IGLib Legacy modules within the container ..."
 
 ########################################################################
 # Custom section (USER DEFINED):
@@ -96,5 +97,5 @@ Write-Host "Updating repositories within iglibmodules_LEGACY/ ...`n`n"
 
 & $(Join-Path $scriptDir "iglibmodules_LEGACY/UpdateReposOld_Extended.ps1")
 
-Write-Host "`nUpdating or cloning the repository completed."
+Write-Host "`nUpdating or cloning other/iglibmosules_ALL/ completed."
 Write-Host "---------------------------------------------------------`n`n"
