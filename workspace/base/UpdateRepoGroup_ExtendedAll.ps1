@@ -19,11 +19,11 @@ Write-Host "Script directory: $scriptDir"
 Write-Host "`nUpdating extended-all IGLibFramework repositories:`n"
 
 Write-Host "`nUpdating workspaceprojects:"
-& $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_workspaceprojects.ps1")
+& $(Join-Path $scriptDir "UpdateRepo_workspaceprojects.ps1")
 
 # clone of workspaceproject_all (below) is not included (this is a very large project)
 Write-Host "`nUpdating workspaceprojects_all:"
-& $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_workspaceprojects_all.ps1")
+& $(Join-Path $scriptDir "UpdateRepo_workspaceprojects_all.ps1")
 
 
 
