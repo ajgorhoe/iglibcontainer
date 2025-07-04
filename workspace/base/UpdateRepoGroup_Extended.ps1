@@ -13,7 +13,7 @@ Write-Host "Script directory: $scriptDir"
 # First, update group of IGLib Framework's basic repositories.
 # This will also update IGLib basic repositories 
 # (script UpdateRepos_Basic.ps1)
-& $(join-path $scriptDir "UpdateReposOld_Basic.ps1")
+& $(join-path $scriptDir "UpdateRepoGroup_Basic.ps1")
 
 
 Write-Host "`nUpdating extended IGLibFramework repositories:`n"
