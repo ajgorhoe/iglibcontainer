@@ -25,7 +25,7 @@ Write-Host "`nUpdating shelldev:"
 & $(Join-Path $scriptDir "UpdateRepo_shelldev.ps1")
 
 Write-Host "`nUpdating data:"
-& $(Join-Path $scriptDir "UpdateRepo_data.ps1")
+& $(Join-Path $scriptDir "UpdateRepo_igdata.ps1")
 
 Write-Host "`nUpdating iglearn:"
 & $(Join-Path $scriptDir "UpdateRepo_iglearn.ps1")
