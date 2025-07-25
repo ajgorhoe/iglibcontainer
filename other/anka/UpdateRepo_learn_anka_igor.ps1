@@ -35,7 +35,7 @@ $global:CurrentRepo_Address = "https://github.com/ajgorhoe/shared.learn_anka_igo
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = ""
 $global:CurrentRepo_RemoteSecondary = ""
-$global:CurrentRepo_AddressTertiary = "d:/backup_sync/bk_code/git/ig/misc/iglib_modules/IGLibCore"
+$global:CurrentRepo_AddressTertiary = "d:\backup_sync\bk_code\git\anka\learn_anka_igor.git"
 $global:CurrentRepo_RemoteTertiary = "local"
 $global:CurrentRepo_ThrowOnErrors = $false
 
