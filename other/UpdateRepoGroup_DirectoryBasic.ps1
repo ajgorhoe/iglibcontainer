@@ -12,6 +12,9 @@ Write-Host "Script directory: $scriptDir"
 Write-Host "`nUpdating iglibmodules:"
 & $(Join-Path $scriptDir "UpdateRepo_iglibmodules.ps1")
 
+Write-Host "`nUpdating anka/iglibmodules_anka:"
+& $(Join-Path $scriptDir "anka/UpdateRepo_iglibmodules_anka.ps1")
+
 Write-Host "`nUpdating learn_sluzba:"
 & $(Join-Path $scriptDir "UpdateRepo_learn_sluzba.ps1")
 
