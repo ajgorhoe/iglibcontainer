@@ -33,7 +33,9 @@ $global:CurrentRepo_Directory = "iglibexternal/"
 $global:CurrentRepo_Ref = "master"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/IGLib.workspace.base.iglibexternal.git"
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = "https://ajgorhoe@bitbucket.org/ajgorhoe/iglib.workspace.base.iglibexternal.git"
+$global:CurrentRepo_AddressSecondary = $null
+# Remark: BitBucket mirror taken out - quota exceeded
+# "https://ajgorhoe@bitbucket.org/ajgorhoe/iglib.workspace.base.iglibexternal.git"
 $global:CurrentRepo_RemoteSecondary = "remoteBitBucker"
 $global:CurrentRepo_AddressTertiary = "d:/backup_sync/bk_code/git/ig/workspace/base/iglibexternal.git"
 $global:CurrentRepo_RemoteTertiary = "local"
