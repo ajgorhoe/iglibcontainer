@@ -11,7 +11,7 @@ $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
 # Then, update ../../workspaceprojects with submodules:
 Write-Host "`nUpdating workspaceprojects with submodules:"
-& $(Join-Path $scriptDir "UpdateRepo_workspaceprojectsWitgSubmodules.ps1")
+& $(Join-Path $scriptDir "UpdateRepo_workspaceprojectsWithSubmodules.ps1")
 
 Write-Host "Script directory: $scriptDir"
 
