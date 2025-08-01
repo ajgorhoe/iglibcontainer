@@ -6,7 +6,7 @@ $scriptPath = $MyInvocation.MyCommand.Path
 $scriptDir = Split-Path $scriptPath -Parent
 $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
-Write-Host "`nCloning / updating WorkspaceProjects WITH SUBMODULES ...`n"
+Write-Host "`nCloning / updating WORKSPACEPROJECTS WITH SUBMODULES ...`n"
 Write-Host "Script directory: $scriptDir"
 
 Write-Host "`nUpdating workspaceprojects CONTAINER:"
@@ -19,5 +19,5 @@ Write-Host "`nUpdating workspaceprojects CONTAINER:"
 # Update the relevant submodules in workspaceprojects:
 & $(Join-Path $scriptDir "workspaceprojects/UpdateRepoGroup_WorkspaceProjects.ps1")
 
-Write-Host "  ... updating basic repositoris in the current directory completed.`n`n"
+Write-Host "  ... updating workspaceprojects with submodules completed.`n`n"
 
