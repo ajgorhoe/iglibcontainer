@@ -1,19 +1,12 @@
 
-# Clones or updates the IGLib Frameworrk basic repositories in iglibmodules.
-Write-Host "`n`nCloning / updating basic IGLib Framework repositories in iglibmodules ...`n"
+# Clones or updates the basic repositories in ws/workspace.
 
 # Get the script directory such that relative paths can be resolved:
 $scriptPath = $MyInvocation.MyCommand.Path
 $scriptDir = Split-Path $scriptPath -Parent
 $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
-
-# First, update group of IGLib basic repositories:
-# & $(join-path $scriptDir "UpdateRepoGroup_Basic.ps1")
-
-
-Write-Host "`nUpdating BASIC WORKSPACE repositories:`n"
-
+Write-Host "`nCloning/updating BASIC WORKSPACE repositories:`n"
 Write-Host "Script directory: $scriptDir"
 
 Write-Host "`nUpdating codedoc:"
@@ -22,12 +15,12 @@ Write-Host "`nUpdating codedoc:"
 Write-Host "`nUpdating igcpp:"
 & $(Join-Path $scriptDir "UpdateRepo_igcpp.ps1")
 
-Write-Host "`nUpdating iglibexternal:"
+Write-Host "`nUpdating z_courses:"
 & $(Join-Path $scriptDir "UpdateRepo_z_courses.ps1")
 
-Write-Host "`nUpdating igsolutions:"
+Write-Host "`nUpdating applications:"
 & $(Join-Path $scriptDir "UpdateRepo_applications.ps1")
 
-
+UpdateRepoGroup_WorkspaceProjects.ps1
 Write-Host "  ... updating basic workspace repositories completed.`n`n"
 
