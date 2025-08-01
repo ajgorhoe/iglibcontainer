@@ -21,6 +21,6 @@ Write-Host "`nUpdating z_courses:"
 Write-Host "`nUpdating applications:"
 & $(Join-Path $scriptDir "UpdateRepo_applications.ps1")
 
-UpdateRepoGroup_WorkspaceProjects.ps1
+
 Write-Host "  ... updating basic workspace repositories completed.`n`n"
 
