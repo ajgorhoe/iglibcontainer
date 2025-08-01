@@ -67,7 +67,7 @@ rem
 rem Passing parameters in the way they are passed is kept in order to
 rem support legacy update scripts (although in this directory, all
 rem scripts have already been updated to the new modus operandi).
-call "%~dp0\UpdateModule_codedoc_new.bat" "" "" %*
+rem call "%~dp0\UpdateModule_codedoc_new.bat" "" "" %*
 call "%~dp0\UpdateModule_codedoc.bat" "" "" %*
 call "%~dp0\UpdateModule_igcpp.bat" "" "" %*
 call "%~dp0\UpdateModule_z_courses.bat" "" "" %*
