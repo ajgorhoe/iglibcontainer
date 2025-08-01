@@ -92,6 +92,8 @@ Write-Host "---------------------------------------------------------"
 Write-Host "`nCalling update script without parameters; it will use global variables..."
 & $UpdatingScriptPath -Execute -DefaultFromVars
 
+# After updating the container repository, run the appropriate script within
+# the container:
 Write-Host "`nUpdating container repo completed."
 Write-Host "Updating repositories within iglibmodules_LEGACY/ ...`n`n"
 
