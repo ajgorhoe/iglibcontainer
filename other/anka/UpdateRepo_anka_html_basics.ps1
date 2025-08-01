@@ -30,7 +30,7 @@ $UpdatingScriptPath = "../../workspace/UpdateOrCloneRepository.ps1"
 #    in the same order as that script's parameters:
 
 $global:CurrentRepo_Directory = "anka_html_basics"
-$global:CurrentRepo_Ref = "main"
+$global:CurrentRepo_Ref = "master"
 $global:CurrentRepo_Address = "https://gitlab.com/AnkitaSL/vaje.anka_html_basics.git"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = ""
