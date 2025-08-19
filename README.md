@@ -3,6 +3,9 @@
 
 This is an auxiliary container repository for the Investigative Generic Library (IGLib) and related software and data, used to checkout and update source code, examples, and test data for IGLib Framework.
 
+Please **note**:  
+This repository is used as container repository for the broader legacy IGLib Framework libraries and for author's personal projects. If you need a **modern customizable container** repository for the current IGLib projects or for customization for your own projects, please see the **["iglibmodules" container repository](https://github.com/ajgorhoe/iglibcontainer)**
+
 The original repository for this container is located at
 
 > *https://github.com/ajgorhoe/iglibcontainer.git*
@@ -38,4 +41,3 @@ See [LICENSE.md](https://github.com/ajgorhoe/iglibcontainer/blob/master/LICENSE.
 ## Other
 
 Please refer to the licenses contained in specific nested repositories for conditions of use. Also note that software depends on a number of external libraries with their own licenses.
-
