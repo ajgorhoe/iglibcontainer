@@ -97,7 +97,7 @@ Write-Host "`nCalling update script without parameters; it will use global varia
 Write-Host "`nUpdating container repo completed."
 Write-Host "Updating repositories within iglibmodules_LEGACY/ ...`n`n"
 
-& $(Join-Path $scriptDir "iglibmodules_LEGACY/UpdateReposOld_Extended.ps1")
+& $(Join-Path $scriptDir "iglibmodules_LEGACY/UpdateReposLegacy_Extended.ps1")
 
 Write-Host "`nUpdating or cloning other/iglibmosules_ALL/ completed."
 Write-Host "---------------------------------------------------------`n`n"
