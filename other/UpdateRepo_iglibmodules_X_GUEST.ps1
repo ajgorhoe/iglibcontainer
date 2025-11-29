@@ -30,7 +30,7 @@ $UpdatingScriptPath = "../workspace/UpdateOrCloneRepository.ps1"
 #    in the same order as that script's parameters:
 
 $global:CurrentRepo_Directory = "iglibmodules_X_GUEST/"
-$global:CurrentRepo_Ref = "main"
+$global:CurrentRepo_Ref = "swrepos/GrLib/repoMain"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/iglibmodules.git"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = "git@github.com-IOptLib:IOptLib/iglibcontainer.git"
