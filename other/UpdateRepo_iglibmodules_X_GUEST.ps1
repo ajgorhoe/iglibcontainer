@@ -35,7 +35,7 @@ $global:CurrentRepo_Address = "https://github.com/ajgorhoe/iglibmodules.git"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = "git@github.com-IOptLib:IOptLib/iglibcontainer.git"
 # "https://gitlab.com/ajgorhoe/iglibmodules.git"
-$global:CurrentRepo_RemoteSecondary = remoteIOptLib
+$global:CurrentRepo_RemoteSecondary = "remoteIOptLib"
 # "remoteGitLab"
 $global:CurrentRepo_AddressTertiary = "d:/backup_sync/bk_code/git/ig/IGLibModules.git"
 $global:CurrentRepo_RemoteTertiary = "local"
