@@ -18,8 +18,8 @@
 #>
 
 Write-Host "`n`n======================================================="
-Write-Host "Updating/cloning other/iglibmosules_ALL/ container"
-Write-Host "  and IGLib Legacy modules within the container ..."
+Write-Host "Updating/cloning iglibmosules_LEGACY/ container"
+Write-Host "  and IGLib Framework legacy modules within the container ..."
 
 ########################################################################
 # Custom section (USER DEFINED):
