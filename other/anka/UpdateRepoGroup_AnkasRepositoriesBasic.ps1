@@ -15,6 +15,9 @@ Write-Host "`nUpdating anka_LearnCsharpBasics:"
 Write-Host "`nUpdating learn_anka_igor:"
 & $(Join-Path $scriptDir "UpdateRepo_learn_anka_igor.ps1")
 
+Write-Host "`nUpdating FinancialNotes:"
+& $(Join-Path $scriptDir "UpdateRepo_FinancialNotes.ps1")
+
 Write-Host "`nUpdating anka_html_basics:"
 & $(Join-Path $scriptDir "UpdateRepo_anka_html_basics.ps1")
 
