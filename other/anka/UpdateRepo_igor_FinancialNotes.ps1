@@ -29,7 +29,7 @@ $UpdatingScriptPath = "../../workspace/UpdateOrCloneRepository.ps1"
 # Define parameter variables for UpdateOrCloneRepository.ps1
 #    in the same order as that script's parameters:
 
-$global:CurrentRepo_Directory = "FinancialNotes"
+$global:CurrentRepo_Directory = "igor_FinancialNotes"
 $global:CurrentRepo_Ref = "main"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/FinancialNotes"
 $global:CurrentRepo_Remote = "origin"
